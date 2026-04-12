@@ -61,7 +61,7 @@
     "typescript": "^5.9.3",
     "vite": "^6.3.5"
   },
-  "repository": "https://github.com/olsakeralexander/Void-Optimizer",
+  "repository": "https://github.com/HBAABA119/Void-Optimizations",
   "build": {
     "electronLanguages": [
       "en-US"
@@ -69,8 +69,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "olsakeralexander",
-        "repo": "Void-Optimizer",
+        "owner": "HBAABA119",
+        "repo": "Void-Optimizations",
         "releaseType": "release"
       }
     ],
