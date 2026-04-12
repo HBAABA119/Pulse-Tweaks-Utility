@@ -1,0 +1,1 @@
+Set-NetFirewallProfile -Profile Domain,Public,Private -LogAllowed True -LogBlocked True

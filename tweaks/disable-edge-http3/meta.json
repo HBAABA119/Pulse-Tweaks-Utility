@@ -1,0 +1,10 @@
+{
+  "title": "Disable Edge HTTP3",
+  "name": "disable-edge-http3",
+  "description": "Disables Edge HTTP3 protocol.",
+  "category": [
+    "Privacy",
+    "Performance"
+  ],
+  "recommended": false
+}

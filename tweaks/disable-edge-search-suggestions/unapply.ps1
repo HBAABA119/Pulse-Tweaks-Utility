@@ -1,0 +1,1 @@
+Set-ItemProperty -Path \HKLM:\SOFTWARE\Policies\Microsoft\Edge\ -Name \SearchSuggestEnabled\ -Value 1 -Type DWord

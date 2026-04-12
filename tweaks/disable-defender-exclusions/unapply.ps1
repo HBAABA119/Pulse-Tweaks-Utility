@@ -1,0 +1,1 @@
+Set-MpPreference -ExclusionPath ; Set-MpPreference -ExclusionProcess 

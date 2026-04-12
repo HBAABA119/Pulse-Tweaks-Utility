@@ -1,0 +1,1 @@
+{"title": "Disable Print Spooler", "name": "disable-print-spooler", "description": "Disables Print Spooler service for better performance.", "category": ["Performance"], "recommended": false}

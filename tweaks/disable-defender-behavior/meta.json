@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-behavior",
+  "title": "Disable Defender Behavior",
+  "description": "Disables Defender behavior monitoring.",
+  "category": ["Privacy", "Security"],
+  "recommended": false
+}

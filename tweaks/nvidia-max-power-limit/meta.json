@@ -1,0 +1,1 @@
+{"title": "NVIDIA Max Power Limit", "name": "nvidia-max-power-limit", "description": "Sets NVIDIA GPU power limit to maximum for peak performance.", "category": ["GPU", "Gaming", "Performance"], "recommended": false}

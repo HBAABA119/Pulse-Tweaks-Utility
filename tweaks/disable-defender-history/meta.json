@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-history",
+  "title": "Disable Defender History",
+  "description": "Disables Defender history retention.",
+  "category": ["Privacy"],
+  "recommended": false
+}

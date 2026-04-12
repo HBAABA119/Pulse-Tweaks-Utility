@@ -1,0 +1,9 @@
+{
+  "title": "Disable Fast Startup",
+  "name": "disable-fast-startup",
+  "description": "Disables Windows Fast Startup for cleaner shutdowns.",
+  "category": [
+    "Performance"
+  ],
+  "recommended": true
+}

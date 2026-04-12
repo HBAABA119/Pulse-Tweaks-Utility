@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-schedule",
+  "title": "Disable Defender Schedule",
+  "description": "Disables Defender scheduled scans.",
+  "category": ["Privacy", "Performance"],
+  "recommended": false
+}

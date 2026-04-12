@@ -1,0 +1,1 @@
+Set-ItemProperty -Path " HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ -Name \VisualFXSetting\ -Value 1 -Type DWord

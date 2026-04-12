@@ -1,0 +1,9 @@
+{
+  "title": "Disable Edge Network Prediction",
+  "name": "disable-edge-network",
+  "description": "Disables Edge network prediction.",
+  "category": [
+    "Privacy"
+  ],
+  "recommended": true
+}

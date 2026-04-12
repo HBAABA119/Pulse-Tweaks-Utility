@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-severe",
+  "title": "Disable Defender Severe",
+  "description": "Sets Defender severe threat action to ignore.",
+  "category": ["Privacy", "Security"],
+  "recommended": false
+}

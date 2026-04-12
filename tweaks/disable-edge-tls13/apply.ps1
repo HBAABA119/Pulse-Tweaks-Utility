@@ -1,0 +1,1 @@
+Set-ItemProperty -Path " HKLM:\SOFTWARE\Policies\Microsoft\Edge\ -Name \SSLVersionMin\ -Value \tls1.2\ -Force

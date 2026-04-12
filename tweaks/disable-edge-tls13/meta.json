@@ -1,0 +1,10 @@
+{
+  "title": "Disable Edge TLS1.3",
+  "name": "disable-edge-tls13",
+  "description": "Disables Edge TLS1.3 for compatibility.",
+  "category": [
+    "Privacy",
+    "Performance"
+  ],
+  "recommended": false
+}

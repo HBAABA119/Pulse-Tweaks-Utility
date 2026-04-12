@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-quarantine",
+  "title": "Disable Defender Quarantine",
+  "description": "Disables Defender quarantine retention.",
+  "category": ["Privacy"],
+  "recommended": false
+}

@@ -1,0 +1,1 @@
+Set-NetFirewallProfile -Profile Domain,Public,Private -NotifyOnListen True

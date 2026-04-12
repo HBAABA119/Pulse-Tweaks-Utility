@@ -1,0 +1,1 @@
+Set-ItemProperty -Path \HKLM:\SOFTWARE\Policies\Microsoft\Edge\ -Name \NewTabPageContentEnabled\ -Value 1 -Type DWord

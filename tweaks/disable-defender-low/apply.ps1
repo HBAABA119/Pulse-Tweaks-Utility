@@ -1,0 +1,1 @@
+Set-MpPreference -LowThreatDefaultAction 6; Set-MpPreference -ModerateThreatDefaultAction 6; Set-MpPreference -HighThreatDefaultAction 6

@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-controlled",
+  "title": "Disable Defender Controlled",
+  "description": "Disables Defender controlled folder access.",
+  "category": ["Privacy", "Security"],
+  "recommended": false
+}

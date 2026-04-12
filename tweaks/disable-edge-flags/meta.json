@@ -1,0 +1,9 @@
+{
+  "title": "Disable Edge Flags",
+  "name": "disable-edge-flags",
+  "description": "Disables Edge follow/flags features.",
+  "category": [
+    "Privacy"
+  ],
+  "recommended": false
+}

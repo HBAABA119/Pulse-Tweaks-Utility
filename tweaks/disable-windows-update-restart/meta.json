@@ -1,0 +1,1 @@
+{"title": "Disable Windows Update Restart", "name": "disable-windows-update-restart", "description": "Prevents Windows from automatically restarting for updates.", "category": ["Privacy", "Performance"], "recommended": true}

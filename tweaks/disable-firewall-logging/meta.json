@@ -1,0 +1,7 @@
+{
+  "name": "disable-firewall-logging",
+  "title": "Disable Firewall Logging",
+  "description": "Disables Windows Firewall logging.",
+  "category": ["Privacy", "Performance"],
+  "recommended": true
+}

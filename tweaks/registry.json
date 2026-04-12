@@ -1,0 +1,2299 @@
+{
+  "version": "2026-04-12T09:16:33.804Z",
+  "tweaks": [
+    {
+      "id": "24-hour-clock",
+      "title": "Set 24-Hour Clock",
+      "description": "Changes clock to display 24-hour format.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/24-hour-clock",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/24-hour-clock/meta.json"
+    },
+    {
+      "id": "align-taskbar-left",
+      "title": "Align Taskbar Left",
+      "description": "Aligns the taskbar to the left side of the screen.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/align-taskbar-left",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/align-taskbar-left/meta.json"
+    },
+    {
+      "id": "amd-chill",
+      "title": "AMD Chill",
+      "description": "Enables AMD Chill technology for smoother gaming performance.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/amd-chill",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/amd-chill/meta.json"
+    },
+    {
+      "id": "amd-radeon-anti-lag",
+      "title": "AMD Radeon Anti-Lag",
+      "description": "Enables AMD Radeon Anti-Lag technology for competitive gaming.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/amd-radeon-anti-lag",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/amd-radeon-anti-lag/meta.json"
+    },
+    {
+      "id": "amd-radeon-boost",
+      "title": "AMD Radeon Boost",
+      "description": "Enables AMD Radeon boost technology for better gaming performance.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/amd-radeon-boost",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/amd-radeon-boost/meta.json"
+    },
+    {
+      "id": "amd-radeon-enhanced-sync",
+      "title": "AMD Radeon Enhanced Sync",
+      "description": "Enables AMD Radeon enhanced synchronization for smoother gaming.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/amd-radeon-enhanced-sync",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/amd-radeon-enhanced-sync/meta.json"
+    },
+    {
+      "id": "debloat-windows",
+      "title": "Debloat Windows",
+      "description": "Choose between Void Debloat script or Raphire's Win11Debloat script to remove built-in Windows apps and bloatware.",
+      "category": [
+        "Performance",
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": false,
+      "updatedversion": "2.14.0",
+      "docsurl": "https://docs.getsparkle.net/tweaks/debloat-windows",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/debloat-windows/meta.json"
+    },
+    {
+      "id": "detailed-bsod",
+      "title": "Detailed BSOD",
+      "description": "Adds detailed information to the Blue Screen of Death (BSOD) screen",
+      "category": [
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/detailed-bsod",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/detailed-bsod/meta.json"
+    },
+    {
+      "id": "disable-ad-tracking",
+      "title": "Disable Ad Tracking",
+      "description": "Disables advertising ID tracking and telemetry.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-ad-tracking",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-ad-tracking/meta.json"
+    },
+    {
+      "id": "disable-advertising-id",
+      "title": "Disable Advertising ID",
+      "description": "Disables Windows advertising ID for better privacy.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-advertising-id",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-advertising-id/meta.json"
+    },
+    {
+      "id": "disable-animations",
+      "title": "Disable Animations",
+      "description": "Disables Windows animations for better performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-animations",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-animations/meta.json"
+    },
+    {
+      "id": "disable-app-suggestions",
+      "title": "Disable App Suggestions",
+      "description": "Disables app suggestions in Start menu and other places.",
+      "category": [
+        "Privacy",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-app-suggestions",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-app-suggestions/meta.json"
+    },
+    {
+      "id": "disable-auto-play",
+      "title": "Disable Auto Play",
+      "description": "Disables Auto Play for external devices.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-auto-play",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-auto-play/meta.json"
+    },
+    {
+      "id": "disable-background-apps",
+      "title": "Disable Background Apps",
+      "description": "Disables apps from running in the background for better performance.",
+      "category": [
+        "Performance",
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-background-apps",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-background-apps/meta.json"
+    },
+    {
+      "id": "disable-background-ms-store-apps",
+      "title": "Disable Background MS Store apps",
+      "description": "Disables Microsoft Store apps from running in the background",
+      "category": [
+        "Performance",
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-background-ms-store-apps",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-background-ms-store-apps/meta.json"
+    },
+    {
+      "id": "disable-bing-search",
+      "title": "Disable Bing Search",
+      "description": "Disables Bing search integration in Windows Search.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-bing-search",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-bing-search/meta.json"
+    },
+    {
+      "id": "disable-bluetooth",
+      "title": "Disable Bluetooth",
+      "description": "Disables Bluetooth service for better performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-bluetooth",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-bluetooth/meta.json"
+    },
+    {
+      "id": "disable-cloud-sync",
+      "title": "Disable Cloud Sync",
+      "description": "Disables Windows cloud sync settings for better privacy.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-cloud-sync",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-cloud-sync/meta.json"
+    },
+    {
+      "id": "consumer-features",
+      "title": "Disable Consumer Features",
+      "description": "Prevents Windows from automatically installing games, third-party apps, or app links from the Microsoft Store.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.14.1",
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-consumer-features",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-consumer-features/meta.json"
+    },
+    {
+      "id": "disable-copilot",
+      "title": "Disable Copilot",
+      "description": "Removes Microsoft's Copilot feature. (will fail if copilot is not installed)",
+      "category": [
+        "Performance",
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-copilot",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-copilot/meta.json"
+    },
+    {
+      "id": "disable-core-isolation",
+      "title": "Disable Core Isolation",
+      "description": "Disables Core Isolation Memory Integrity to improve system performance",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-core-isolation",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-core-isolation/meta.json"
+    },
+    {
+      "id": "disable-cortana",
+      "title": "Disable Cortana",
+      "description": "Removes Cortana assistant for better privacy and performance.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-cortana",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-cortana/meta.json"
+    },
+    {
+      "id": "disable-customer-experience",
+      "title": "Disable Customer Experience",
+      "description": "Disables Windows Customer Experience Improvement Program.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-customer-experience",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-customer-experience/meta.json"
+    },
+    {
+      "id": "disable-defender",
+      "title": "Disable Defender",
+      "description": "Disables Windows Defender real-time protection.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender/meta.json"
+    },
+    {
+      "id": "disable-defender-behavior",
+      "title": "Disable Defender Behavior",
+      "description": "Disables Defender behavior monitoring.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-behavior",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-behavior/meta.json"
+    },
+    {
+      "id": "disable-defender-cloud",
+      "title": "Disable Defender Cloud",
+      "description": "Disables Defender cloud protection.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-cloud",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-cloud/meta.json"
+    },
+    {
+      "id": "disable-defender-controlled",
+      "title": "Disable Defender Controlled",
+      "description": "Disables Defender controlled folder access.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-controlled",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-controlled/meta.json"
+    },
+    {
+      "id": "disable-defender-exclusions",
+      "title": "Disable Defender Exclusions",
+      "description": "Adds broad exclusions to Defender.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-exclusions",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-exclusions/meta.json"
+    },
+    {
+      "id": "disable-defender-exploit",
+      "title": "Disable Defender Exploit",
+      "description": "Disables Defender exploit protection.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-exploit",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-exploit/meta.json"
+    },
+    {
+      "id": "disable-defender-history",
+      "title": "Disable Defender History",
+      "description": "Disables Defender history retention.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-history",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-history/meta.json"
+    },
+    {
+      "id": "disable-defender-low",
+      "title": "Disable Defender Low Priority",
+      "description": "Sets Defender threat actions to ignore.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-low",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-low/meta.json"
+    },
+    {
+      "id": "disable-defender-network",
+      "title": "Disable Defender Network",
+      "description": "Disables Defender network protection.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-network",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-network/meta.json"
+    },
+    {
+      "id": "disable-defender-notification",
+      "title": "Disable Defender Notification",
+      "description": "Disables Defender notifications.",
+      "category": [
+        "Privacy",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-notification",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-notification/meta.json"
+    },
+    {
+      "id": "disable-defender-quarantine",
+      "title": "Disable Defender Quarantine",
+      "description": "Disables Defender quarantine retention.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-quarantine",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-quarantine/meta.json"
+    },
+    {
+      "id": "disable-defender-ransomware",
+      "title": "Disable Defender Ransomware",
+      "description": "Disables Defender ransomware protection.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-ransomware",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-ransomware/meta.json"
+    },
+    {
+      "id": "disable-defender-rtp",
+      "title": "Disable Defender RTP",
+      "description": "Disables Defender Real-time Protection",
+      "category": [
+        "Performance",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-rtp",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-rtp/meta.json"
+    },
+    {
+      "id": "disable-defender-sample",
+      "title": "Disable Defender Sample",
+      "description": "Disables Defender sample submission.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-sample",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-sample/meta.json"
+    },
+    {
+      "id": "disable-defender-scan",
+      "title": "Disable Defender Scan",
+      "description": "Disables Defender real-time scanning.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-scan",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-scan/meta.json"
+    },
+    {
+      "id": "disable-defender-schedule",
+      "title": "Disable Defender Schedule",
+      "description": "Disables Defender scheduled scans.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-schedule",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-schedule/meta.json"
+    },
+    {
+      "id": "disable-defender-severe",
+      "title": "Disable Defender Severe",
+      "description": "Sets Defender severe threat action to ignore.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-severe",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-severe/meta.json"
+    },
+    {
+      "id": "disable-defender-tamper",
+      "title": "Disable Defender Tamper",
+      "description": "Disables Defender tamper protection.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-defender-tamper",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-defender-tamper/meta.json"
+    },
+    {
+      "id": "disable-diag-track",
+      "title": "Disable DiagTrack Service",
+      "description": "Disables Windows Diagnostics Tracking Service for better privacy.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-diag-track",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-diag-track/meta.json"
+    },
+    {
+      "id": "disable-dvr",
+      "title": "Disable Game DVR",
+      "description": "Disables Game DVR recording for better gaming performance.",
+      "category": [
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-dvr",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-dvr/meta.json"
+    },
+    {
+      "id": "disable-dynamic-ticking",
+      "title": "Disable Dynamic Ticking",
+      "description": "Improves system responsiveness and reduces latency by disabling dynamic timer ticks.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-dynamic-ticking",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-dynamic-ticking/meta.json"
+    },
+    {
+      "id": "disable-edge",
+      "title": "Disable Edge",
+      "description": "Removes Microsoft Edge browser.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge/meta.json"
+    },
+    {
+      "id": "disable-edge-ads",
+      "title": "Disable Edge Ads",
+      "description": "Disables ads in Edge browser.",
+      "category": [
+        "Privacy",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-ads",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-ads/meta.json"
+    },
+    {
+      "id": "disable-edge-analytics",
+      "title": "Disable Edge Analytics",
+      "description": "Disables Edge analytics and metrics.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-analytics",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-analytics/meta.json"
+    },
+    {
+      "id": "disable-edge-autofill",
+      "title": "Disable Edge Autofill",
+      "description": "Disables Edge autofill for better privacy.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-autofill",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-autofill/meta.json"
+    },
+    {
+      "id": "disable-edge-background",
+      "title": "Disable Edge Background",
+      "description": "Disables Edge running in background.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-background",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-background/meta.json"
+    },
+    {
+      "id": "disable-edge-caching",
+      "title": "Disable Edge Caching",
+      "description": "Disables Edge disk caching.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-caching",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-caching/meta.json"
+    },
+    {
+      "id": "disable-edge-certificate",
+      "title": "Disable Edge Certificate",
+      "description": "Disables Edge auto certificate selection.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-certificate",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-certificate/meta.json"
+    },
+    {
+      "id": "disable-edge-collections",
+      "title": "Disable Edge Collections",
+      "description": "Disables Edge Collections feature.",
+      "category": [
+        "Appearance",
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-collections",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-collections/meta.json"
+    },
+    {
+      "id": "disable-edge-dns",
+      "title": "Disable Edge DNS",
+      "description": "Disables Edge built-in DNS client.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-dns",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-dns/meta.json"
+    },
+    {
+      "id": "disable-edge-experiment",
+      "title": "Disable Edge Experiment",
+      "description": "Disables Edge experimentation features.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-experiment",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-experiment/meta.json"
+    },
+    {
+      "id": "disable-edge-extensions",
+      "title": "Disable Edge Extensions",
+      "description": "Blocks Edge extensions for better security.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-extensions",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-extensions/meta.json"
+    },
+    {
+      "id": "disable-edge-flags",
+      "title": "Disable Edge Flags",
+      "description": "Disables Edge follow/flags features.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-flags",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-flags/meta.json"
+    },
+    {
+      "id": "disable-edge-http3",
+      "title": "Disable Edge HTTP3",
+      "description": "Disables Edge HTTP3 protocol.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-http3",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-http3/meta.json"
+    },
+    {
+      "id": "disable-edge-network",
+      "title": "Disable Edge Network Prediction",
+      "description": "Disables Edge network prediction.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-network",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-network/meta.json"
+    },
+    {
+      "id": "disable-edge-news-feed",
+      "title": "Disable Edge News Feed",
+      "description": "Disables Edge news feed on new tab.",
+      "category": [
+        "Privacy",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-news-feed",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-news-feed/meta.json"
+    },
+    {
+      "id": "disable-edge-passwords",
+      "title": "Disable Edge Passwords",
+      "description": "Disables Edge password manager.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-passwords",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-passwords/meta.json"
+    },
+    {
+      "id": "disable-edge-preload",
+      "title": "Disable Edge Preload",
+      "description": "Disables Edge preload for better performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-preload",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-preload/meta.json"
+    },
+    {
+      "id": "disable-edge-proxy",
+      "title": "Disable Edge Proxy",
+      "description": "Disables Edge proxy settings.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-proxy",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-proxy/meta.json"
+    },
+    {
+      "id": "disable-edge-quic",
+      "title": "Disable Edge QUIC",
+      "description": "Disables Edge QUIC protocol.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-quic",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-quic/meta.json"
+    },
+    {
+      "id": "disable-edge-safe-browsing",
+      "title": "Disable Edge Safe Browsing",
+      "description": "Disables Edge safe browsing.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-safe-browsing",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-safe-browsing/meta.json"
+    },
+    {
+      "id": "disable-edge-search-suggestions",
+      "title": "Disable Edge Search Suggestions",
+      "description": "Disables Edge search suggestions.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-search-suggestions",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-search-suggestions/meta.json"
+    },
+    {
+      "id": "disable-edge-shopping",
+      "title": "Disable Edge Shopping",
+      "description": "Disables Edge shopping features.",
+      "category": [
+        "Privacy",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-shopping",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-shopping/meta.json"
+    },
+    {
+      "id": "disable-edge-sidebar",
+      "title": "Disable Edge Sidebar",
+      "description": "Disables Edge sidebar for cleaner browsing.",
+      "category": [
+        "Appearance",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-sidebar",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-sidebar/meta.json"
+    },
+    {
+      "id": "disable-edge-smartscreen",
+      "title": "Disable Edge SmartScreen",
+      "description": "Disables Edge SmartScreen filter.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-smartscreen",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-smartscreen/meta.json"
+    },
+    {
+      "id": "disable-edge-startup",
+      "title": "Disable Edge Startup",
+      "description": "Disables Edge from startup.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-startup",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-startup/meta.json"
+    },
+    {
+      "id": "disable-edge-sync",
+      "title": "Disable Edge Sync",
+      "description": "Disables Edge sync for better privacy.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-sync",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-sync/meta.json"
+    },
+    {
+      "id": "disable-edge-tls13",
+      "title": "Disable Edge TLS1.3",
+      "description": "Disables Edge TLS1.3 for compatibility.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-tls13",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-tls13/meta.json"
+    },
+    {
+      "id": "disable-edge-tracking",
+      "title": "Disable Edge Tracking",
+      "description": "Disables Edge tracking and telemetry.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-tracking",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-tracking/meta.json"
+    },
+    {
+      "id": "disable-edge-translate",
+      "title": "Disable Edge Translate",
+      "description": "Disables Edge translate feature.",
+      "category": [
+        "Privacy",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-translate",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-translate/meta.json"
+    },
+    {
+      "id": "disable-edge-typing",
+      "title": "Disable Edge Typing",
+      "description": "Disables Edge typing features.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-typing",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-typing/meta.json"
+    },
+    {
+      "id": "disable-edge-update",
+      "title": "Disable Edge Auto Update",
+      "description": "Disables Edge automatic updates.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-edge-update",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-edge-update/meta.json"
+    },
+    {
+      "id": "disable-fast-startup",
+      "title": "Disable Fast Startup",
+      "description": "Disables Windows Fast Startup for cleaner shutdowns.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-fast-startup",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-fast-startup/meta.json"
+    },
+    {
+      "id": "disable-fax",
+      "title": "Disable Fax Service",
+      "description": "Disables Fax service for better performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-fax",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-fax/meta.json"
+    },
+    {
+      "id": "disable-firewall",
+      "title": "Disable Firewall",
+      "description": "Disables Windows Firewall.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-firewall",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-firewall/meta.json"
+    },
+    {
+      "id": "disable-firewall-logging",
+      "title": "Disable Firewall Logging",
+      "description": "Disables Windows Firewall logging.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-firewall-logging",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-firewall-logging/meta.json"
+    },
+    {
+      "id": "disable-firewall-notifications",
+      "title": "Disable Firewall Notifications",
+      "description": "Disables Windows Firewall notifications.",
+      "category": [
+        "Privacy",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-firewall-notifications",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-firewall-notifications/meta.json"
+    },
+    {
+      "id": "disable-firewall-rules",
+      "title": "Disable Firewall Rules",
+      "description": "Removes all Windows Firewall rules.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-firewall-rules",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-firewall-rules/meta.json"
+    },
+    {
+      "id": "disable-fmx",
+      "title": "Legacy Volume Mixer",
+      "description": "Enables the legacy volume mixer instead of the modern one.",
+      "category": [
+        "Appearance",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-fmx",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-fmx/meta.json"
+    },
+    {
+      "id": "disable-fse-globally",
+      "title": "Global FSE Disable",
+      "description": "Disables Fullscreen Optimizations globally via Policy Manager.",
+      "category": [
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-fse-globally",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-fse-globally/meta.json"
+    },
+    {
+      "id": "disable-fso",
+      "title": "Disable Fullscreen Optimizations",
+      "description": "Disables Windows Fullscreen Optimizations for lower latency in games.",
+      "category": [
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-fso",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-fso/meta.json"
+    },
+    {
+      "id": "disable-gamebar",
+      "title": "Disable Gamebar",
+      "description": "Disables The Xbox gamebar ",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-gamebar",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-gamebar/meta.json"
+    },
+    {
+      "id": "disable-hibernate",
+      "title": "Disable Hibernate",
+      "description": "Disables hibernate to save disk space.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-hibernate",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-hibernate/meta.json"
+    },
+    {
+      "id": "disable-hibernation",
+      "title": "Disable Hibernation",
+      "description": "Disables the hibernation feature to free up disk space and improve shutdown speed",
+      "category": [
+        "Performance",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-hibernation",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-hibernation/meta.json"
+    },
+    {
+      "id": "disable-ipv6",
+      "title": "Disable IPv6",
+      "description": "Disables IPv6 to improve network performance on IPv4-only networks.",
+      "category": [
+        "Network",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-ipv6",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-ipv6/meta.json"
+    },
+    {
+      "id": "disable-location-services",
+      "title": "Disable Location Services",
+      "description": "Disables Windows location services for better privacy.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-location-services",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-location-services/meta.json"
+    },
+    {
+      "id": "disable-location-tracking",
+      "title": "Disable Location Tracking",
+      "description": "Disables Windows location tracking.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-location-tracking",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-location-tracking/meta.json"
+    },
+    {
+      "id": "disable-lockscreen-tips",
+      "title": "Disable Lockscreen Tips",
+      "description": "Disables tips on the lockscreen.",
+      "category": [
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-lockscreen-tips",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-lockscreen-tips/meta.json"
+    },
+    {
+      "id": "disable-maps",
+      "title": "Disable Maps",
+      "description": "Removes Windows Maps app.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-maps",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-maps/meta.json"
+    },
+    {
+      "id": "disable-meet-now",
+      "title": "Disable Meet Now",
+      "description": "Removes Meet Now button from taskbar.",
+      "category": [
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-meet-now",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-meet-now/meta.json"
+    },
+    {
+      "id": "disable-microsoft-account",
+      "title": "Disable Microsoft Account",
+      "description": "Disables Microsoft account requirement for local account creation.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-microsoft-account",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-microsoft-account/meta.json"
+    },
+    {
+      "id": "disable-mixed-reality",
+      "title": "Disable Mixed Reality",
+      "description": "Removes Mixed Reality Portal.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-mixed-reality",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-mixed-reality/meta.json"
+    },
+    {
+      "id": "disable-money",
+      "title": "Disable Money",
+      "description": "Removes Money app.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-money",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-money/meta.json"
+    },
+    {
+      "id": "disable-mouse-acceleration",
+      "title": "Disable Mouse Acceleration",
+      "description": "Disables mouse acceleration for a more consistent and precise mouse movement experience. Great for gaming",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-mouse-acceleration",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-mouse-acceleration/meta.json"
+    },
+    {
+      "id": "disable-mpo",
+      "title": "Disable MPO",
+      "description": "Disables Multi-Plane Overlay to fix flickering and stuttering on some GPUs.",
+      "category": [
+        "GPU",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-mpo",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-mpo/meta.json"
+    },
+    {
+      "id": "disable-news",
+      "title": "Disable News",
+      "description": "Removes News app.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-news",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-news/meta.json"
+    },
+    {
+      "id": "disable-news-interests",
+      "title": "Disable News and Interests",
+      "description": "Removes News and Interests widget from taskbar.",
+      "category": [
+        "Appearance",
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-news-interests",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-news-interests/meta.json"
+    },
+    {
+      "id": "disable-onedrive",
+      "title": "Disable OneDrive",
+      "description": "Disables OneDrive from startup.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-onedrive",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-onedrive/meta.json"
+    },
+    {
+      "id": "disable-people-pill",
+      "title": "Disable People Pill",
+      "description": "Removes People pill from taskbar.",
+      "category": [
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-people-pill",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-people-pill/meta.json"
+    },
+    {
+      "id": "disable-print-spooler",
+      "title": "Disable Print Spooler",
+      "description": "Disables Print Spooler service for better performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-print-spooler",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-print-spooler/meta.json"
+    },
+    {
+      "id": "disable-windows-recall",
+      "title": "Disable Windows Recall",
+      "description": "Disables the Windows Recall feature for better privacy.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.14.2",
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-recall",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-recall/meta.json"
+    },
+    {
+      "id": "disable-remote-desktop",
+      "title": "Disable Remote Desktop",
+      "description": "Disables Remote Desktop for better security.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-remote-desktop",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-remote-desktop/meta.json"
+    },
+    {
+      "id": "disable-screensaver",
+      "title": "Disable Screensaver",
+      "description": "Disables screensaver for better performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-screensaver",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-screensaver/meta.json"
+    },
+    {
+      "id": "disable-search-indexing",
+      "title": "Disable Search Indexing",
+      "description": "Disables Windows Search Indexing for better SSD performance and lower resource usage.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-search-indexing",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-search-indexing/meta.json"
+    },
+    {
+      "id": "disable-skype",
+      "title": "Disable Skype",
+      "description": "Removes Skype app.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-skype",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-skype/meta.json"
+    },
+    {
+      "id": "disable-sleep",
+      "title": "Disable Sleep",
+      "description": "Disables sleep mode for always-on performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-sleep",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-sleep/meta.json"
+    },
+    {
+      "id": "disable-smart-screen",
+      "title": "Disable Smart Screen",
+      "description": "Disables Smart Screen to prevent Windows from blocking unknown apps.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-smart-screen",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-smart-screen/meta.json"
+    },
+    {
+      "id": "disable-smartscreen",
+      "title": "Disable SmartScreen",
+      "description": "Disables Windows SmartScreen filter.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-smartscreen",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-smartscreen/meta.json"
+    },
+    {
+      "id": "disable-sports",
+      "title": "Disable Sports",
+      "description": "Removes Sports app.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-sports",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-sports/meta.json"
+    },
+    {
+      "id": "disable-startup-apps",
+      "title": "Disable Startup Apps",
+      "description": "Disables all startup applications for faster boot times.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-startup-apps",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-startup-apps/meta.json"
+    },
+    {
+      "id": "disable-superfetch",
+      "title": "Disable Superfetch",
+      "description": "Disables Superfetch/SysMain service for better SSD performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-superfetch",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-superfetch/meta.json"
+    },
+    {
+      "id": "disable-system-tray",
+      "title": "Disable System Tray",
+      "description": "Hides system tray icons for a cleaner look.",
+      "category": [
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-system-tray",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-system-tray/meta.json"
+    },
+    {
+      "id": "disable-task-view",
+      "title": "Disable Task View",
+      "description": "Removes Task View button from taskbar.",
+      "category": [
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-task-view",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-task-view/meta.json"
+    },
+    {
+      "id": "disable-taskbar-search",
+      "title": "Disable Taskbar Search",
+      "description": "Removes search box from taskbar for a cleaner look.",
+      "category": [
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-taskbar-search",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-taskbar-search/meta.json"
+    },
+    {
+      "id": "disable-telemetry",
+      "title": "Disable Telemetry",
+      "description": "Disables Windows telemetry and data collection for improved privacy and performance.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.14.0",
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-telemetry",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-telemetry/meta.json"
+    },
+    {
+      "id": "disable-timer-resolution",
+      "title": "Disable Timer Resolution",
+      "description": "Disables timer resolution adjustments for better performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-timer-resolution",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-timer-resolution/meta.json"
+    },
+    {
+      "id": "disable-tips-tricks",
+      "title": "Disable Tips and Tricks",
+      "description": "Disables Windows tips and tricks notifications.",
+      "category": [
+        "Privacy",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-tips-tricks",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-tips-tricks/meta.json"
+    },
+    {
+      "id": "disable-transparency",
+      "title": "Disable Transparency",
+      "description": "Disables Windows transparency effects for better performance and lower DWM usage.",
+      "category": [
+        "Appearance",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-transparency",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-transparency/meta.json"
+    },
+    {
+      "id": "disable-travel",
+      "title": "Disable Travel",
+      "description": "Removes Travel app.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-travel",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-travel/meta.json"
+    },
+    {
+      "id": "disable-uac",
+      "title": "Disable UAC",
+      "description": "Disables User Account Control for fewer prompts.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-uac",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-uac/meta.json"
+    },
+    {
+      "id": "disable-weather",
+      "title": "Disable Weather",
+      "description": "Removes Weather app.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-weather",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-weather/meta.json"
+    },
+    {
+      "id": "disable-web-notifications",
+      "title": "Disable Web Notifications",
+      "description": "Disables web notifications in browsers.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-web-notifications",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-web-notifications/meta.json"
+    },
+    {
+      "id": "disable-wifi",
+      "title": "Disable WiFi",
+      "description": "Disables WiFi service for better performance.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-wifi",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-wifi/meta.json"
+    },
+    {
+      "id": "disable-wifi-sense",
+      "title": "Disable Wifi Sense",
+      "description": "Disables Wifi Sense to prevent sharing of Wi-Fi networks with contacts",
+      "category": [
+        "Privacy",
+        "Network",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-wifi-sense",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-wifi-sense/meta.json"
+    },
+    {
+      "id": "disable-windows-error-reporting",
+      "title": "Disable Windows Error Reporting",
+      "description": "Disables Windows Error Reporting for better privacy.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-windows-error-reporting",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-windows-error-reporting/meta.json"
+    },
+    {
+      "id": "disable-windows-spotlight",
+      "title": "Disable Windows Spotlight",
+      "description": "Disables Windows Spotlight on lock screen and Start menu.",
+      "category": [
+        "Privacy",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-windows-spotlight",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-windows-spotlight/meta.json"
+    },
+    {
+      "id": "disable-windows-update-restart",
+      "title": "Disable Windows Update Restart",
+      "description": "Prevents Windows from automatically restarting for updates.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-windows-update-restart",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-windows-update-restart/meta.json"
+    },
+    {
+      "id": "disable-xbox-app",
+      "title": "Disable Xbox App",
+      "description": "Removes Xbox app.",
+      "category": [
+        "Privacy",
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-xbox-app",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-xbox-app/meta.json"
+    },
+    {
+      "id": "disable-xbox-game-pass",
+      "title": "Disable Xbox Game Pass",
+      "description": "Removes Xbox Game Pass app.",
+      "category": [
+        "Privacy",
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-xbox-game-pass",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-xbox-game-pass/meta.json"
+    },
+    {
+      "id": "disable-xbox-gamebar",
+      "title": "Disable Xbox Gamebar",
+      "description": "Disables Xbox Gamebar and Game DVR for better performance.",
+      "category": [
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-xbox-gamebar",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-xbox-gamebar/meta.json"
+    },
+    {
+      "id": "disable-xbox-services",
+      "title": "Disable Xbox Services",
+      "description": "Disables all Xbox-related services.",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-xbox-services",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-xbox-services/meta.json"
+    },
+    {
+      "id": "disable-your-phone",
+      "title": "Disable Your Phone",
+      "description": "Removes Your Phone app.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-your-phone",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-your-phone/meta.json"
+    },
+    {
+      "id": "dns-adguard",
+      "title": "DNS AdGuard",
+      "description": "Sets DNS to AdGuard for ad-blocking and privacy protection.",
+      "category": [
+        "Network",
+        "Privacy",
+        "Security"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/dns-adguard",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/dns-adguard/meta.json"
+    },
+    {
+      "id": "dns-cleanbrowsing",
+      "title": "DNS CleanBrowsing",
+      "description": "Sets DNS to CleanBrowsing for family-safe browsing with content filtering.",
+      "category": [
+        "Network",
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/dns-cleanbrowsing",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/dns-cleanbrowsing/meta.json"
+    },
+    {
+      "id": "dns-cloudflare",
+      "title": "DNS Cloudflare",
+      "description": "Sets DNS to Cloudflare for faster and more private browsing.",
+      "category": [
+        "Network",
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/dns-cloudflare",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/dns-cloudflare/meta.json"
+    },
+    {
+      "id": "dns-google",
+      "title": "DNS Google",
+      "description": "Sets DNS to Google for reliable and fast browsing.",
+      "category": [
+        "Network",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/dns-google",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/dns-google/meta.json"
+    },
+    {
+      "id": "dns-opendns",
+      "title": "DNS OpenDNS",
+      "description": "Sets DNS to OpenDNS for family-safe browsing with content filtering.",
+      "category": [
+        "Network",
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/dns-opendns",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/dns-opendns/meta.json"
+    },
+    {
+      "id": "dns-quad9",
+      "title": "DNS Quad9",
+      "description": "Sets DNS to Quad9 for secure and private browsing with malware protection.",
+      "category": [
+        "Network",
+        "Privacy",
+        "Security"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/dns-quad9",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/dns-quad9/meta.json"
+    },
+    {
+      "id": "enable-balanced",
+      "title": "Enable Balanced Power",
+      "description": "Sets power plan to Balanced mode.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-balanced",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-balanced/meta.json"
+    },
+    {
+      "id": "enable-dark-mode",
+      "title": "Enable Dark Mode",
+      "description": "Enables dark mode for Windows. Great for unactivated systems.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-dark-mode",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-dark-mode/meta.json"
+    },
+    {
+      "id": "enable-end-task-right-click",
+      "title": "Enable End Task With Right Click",
+      "description": "Enables the \"End Task\" option in the taskbar context menu",
+      "category": [
+        "General"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-end-task-right-click",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-end-task-right-click/meta.json"
+    },
+    {
+      "id": "enable-game-mode",
+      "title": "Enable Game Mode",
+      "description": "Enables Windows Game Mode for better gaming performance.",
+      "category": [
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-game-mode",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-game-mode/meta.json"
+    },
+    {
+      "id": "enable-hags",
+      "title": "Enable HAGS",
+      "description": "Enables HAGS (Hardware Accelerated GPU Scheduling)",
+      "category": [
+        "Performance",
+        "Gaming",
+        "GPU"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-hags",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-hags/meta.json"
+    },
+    {
+      "id": "enable-hardware-acceleration",
+      "title": "Enable Hardware Acceleration",
+      "description": "Enables GPU hardware acceleration for UI rendering.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-hardware-acceleration",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-hardware-acceleration/meta.json"
+    },
+    {
+      "id": "enable-high-performance",
+      "title": "Enable High Performance",
+      "description": "Sets power plan to High Performance mode.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-high-performance",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-high-performance/meta.json"
+    },
+    {
+      "id": "enable-large-taskbar",
+      "title": "Enable Large Taskbar",
+      "description": "Enables large icons on taskbar for better visibility.",
+      "category": [
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-large-taskbar",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-large-taskbar/meta.json"
+    },
+    {
+      "id": "enable-network-qos",
+      "title": "Enable Network QoS",
+      "description": "Enables Quality of Service for better network performance management.",
+      "category": [
+        "Network",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-network-qos",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-network-qos/meta.json"
+    },
+    {
+      "id": "enable-optimization-for-windowed-games",
+      "title": "Enable Optimization For Windowed Games",
+      "description": "Enables Optimization For Windowed Games on windows",
+      "category": [
+        "General",
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-optimization-for-windowed-games",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-optimization-for-windowed-games/meta.json"
+    },
+    {
+      "id": "enable-small-taskbar",
+      "title": "Enable Small Taskbar",
+      "description": "Enables small icons on taskbar for a cleaner look.",
+      "category": [
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-small-taskbar",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-small-taskbar/meta.json"
+    },
+    {
+      "id": "enable-taskbar-auto-hide",
+      "title": "Enable Taskbar Auto-Hide",
+      "description": "Enables taskbar auto-hide for more screen space.",
+      "category": [
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-taskbar-auto-hide",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-taskbar-auto-hide/meta.json"
+    },
+    {
+      "id": "enable-visual-refresh",
+      "title": "Enable Visual Refresh",
+      "description": "Enables Windows visual refresh effects for a more modern look.",
+      "category": [
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-visual-refresh",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-visual-refresh/meta.json"
+    },
+    {
+      "id": "hide-taskview-and-widgets",
+      "title": "Hide Taskview and Widgets",
+      "description": "Hides the Taskview and Widgets buttons on the taskbar.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/hide-taskview-and-widgets",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/hide-taskview-and-widgets/meta.json"
+    },
+    {
+      "id": "intel-extreme-tuning",
+      "title": "Intel Extreme Tuning",
+      "description": "Enables Intel extreme performance tuning for maximum GPU performance.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/intel-extreme-tuning",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/intel-extreme-tuning/meta.json"
+    },
+    {
+      "id": "intel-gpu-boost",
+      "title": "Intel GPU Boost",
+      "description": "Enables Intel GPU boost technology for better performance.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/intel-gpu-boost",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/intel-gpu-boost/meta.json"
+    },
+    {
+      "id": "menu-show-delay-zero",
+      "title": "Menu Show Delay Zero",
+      "description": "Removes the delay when opening menus.",
+      "category": [
+        "Performance",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/menu-show-delay-zero",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/menu-show-delay-zero/meta.json"
+    },
+    {
+      "id": "nvidia-low-latency",
+      "title": "NVIDIA Low Latency Mode",
+      "description": "Enables NVIDIA low latency mode for competitive gaming.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/nvidia-low-latency",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/nvidia-low-latency/meta.json"
+    },
+    {
+      "id": "nvidia-max-power-limit",
+      "title": "NVIDIA Max Power Limit",
+      "description": "Sets NVIDIA GPU power limit to maximum for peak performance.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/nvidia-max-power-limit",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/nvidia-max-power-limit/meta.json"
+    },
+    {
+      "id": "nvidia-power-mode",
+      "title": "NVIDIA Power Mode",
+      "description": "Optimizes NVIDIA GPU power settings for maximum performance.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/nvidia-power-mode",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/nvidia-power-mode/meta.json"
+    },
+    {
+      "id": "nvidia-sharpening",
+      "title": "NVIDIA Sharpening",
+      "description": "Enables NVIDIA image sharpening for better visual clarity.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/nvidia-sharpening",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/nvidia-sharpening/meta.json"
+    },
+    {
+      "id": "nvidia-threaded-optimization",
+      "title": "NVIDIA Threaded Optimization",
+      "description": "Enables NVIDIA threaded optimization for better multi-core performance.",
+      "category": [
+        "GPU",
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/nvidia-threaded-optimization",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/nvidia-threaded-optimization/meta.json"
+    },
+    {
+      "id": "optimize-dns",
+      "title": "Optimize DNS",
+      "description": "Optimizes DNS settings for faster resolution.",
+      "category": [
+        "Network",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/optimize-dns",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/optimize-dns/meta.json"
+    },
+    {
+      "id": "optimize-network-settings",
+      "title": "Optimize Network Settings",
+      "description": "Changes various Windows settings to improve network latency and speeds.",
+      "category": [
+        "Network",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "updatedversion": "2.9.0",
+      "docsurl": "https://docs.getsparkle.net/tweaks/optimize-network-settings",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/optimize-network-settings/meta.json"
+    },
+    {
+      "id": "optimize-network-throttling",
+      "title": "Optimize Network Throttling",
+      "description": "Disables Windows network throttling for better performance.",
+      "category": [
+        "Network",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/optimize-network-throttling",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/optimize-network-throttling/meta.json"
+    },
+    {
+      "id": "optimize-nvidia-settings",
+      "title": "Optimize Nvidia Settings",
+      "description": "Changes Nvidia Control Panel settings to improve gaming performance",
+      "category": [
+        "Performance",
+        "GPU",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": false,
+      "docsurl": "https://docs.getsparkle.net/tweaks/optimize-nvidia-settings",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/optimize-nvidia-settings/meta.json"
+    },
+    {
+      "id": "optimize-tcp-stack",
+      "title": "Optimize TCP Stack",
+      "description": "Optimizes TCP/IP stack for better network performance.",
+      "category": [
+        "Performance",
+        "Network"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/optimize-tcp-stack",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/optimize-tcp-stack/meta.json"
+    },
+    {
+      "id": "remove-gaming-apps",
+      "title": "Remove Gaming Apps",
+      "description": "Removes Xbox app, Xbox Game Bar, and Xbox Game Overlay",
+      "category": [
+        "Performance",
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": false,
+      "docsurl": "https://docs.getsparkle.net/tweaks/remove-gaming-apps",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/remove-gaming-apps/meta.json"
+    },
+    {
+      "id": "remove-ms-bing-integration",
+      "title": "Remove Microsoft Bing Integration",
+      "description": "Removes Bing apps and disables Bing web search in Windows Search.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/remove-ms-bing-integration",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/remove-ms-bing-integration/meta.json"
+    },
+    {
+      "id": "remove-onedrive",
+      "title": "Remove OneDrive",
+      "description": "Removes OneDrive from the system",
+      "category": [
+        "Performance",
+        "General",
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/remove-onedrive",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/remove-onedrive/meta.json"
+    },
+    {
+      "id": "revert-context-menu",
+      "title": "Revert Context Menu",
+      "description": "Reverts the context menu to the default Windows 10 context menu.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/revert-context-menu",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/revert-context-menu/meta.json"
+    },
+    {
+      "id": "set-powershell7-default",
+      "title": "Set PowerShell 7 as Default",
+      "description": "Sets PowerShell 7 as the default profile in Windows Terminal (installs PS7 if missing)",
+      "category": [
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/set-powershell7-default",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/set-powershell7-default/meta.json"
+    },
+    {
+      "id": "set-services-to-manual",
+      "title": "Set Services to Manual",
+      "description": "Sets various Windows services to Manual startup type to improve performance.",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/set-services-to-manual",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/set-services-to-manual/meta.json"
+    },
+    {
+      "id": "set-time-utc",
+      "title": "Set Time To UTC",
+      "description": "Sets the system time to UTC, Great for dual booting",
+      "category": [
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/set-time-utc",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/set-time-utc/meta.json"
+    },
+    {
+      "id": "set-win32-priority-separation",
+      "title": "Set Win32 Priority Separation",
+      "description": "Optimizes foreground app performance by modifying system process priority behavior.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/set-win32-priority-separation",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/set-win32-priority-separation/meta.json"
+    },
+    {
+      "id": "show-seconds-in-taskbar-clock",
+      "title": "Show Seconds in Taskbar Clock",
+      "description": "Enables the seconds next to the clock in the taskbar",
+      "category": [
+        "Appearance",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/show-seconds-in-system-clock",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/show-seconds-in-system-clock/meta.json"
+    },
+    {
+      "id": "ultimate-performance-plan",
+      "title": "Ultimate Performance Power Plan",
+      "description": "Enables And Applys The Windows Ultimate Powerplan for better performance",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/ultimate-performance-plan",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/ultimate-performance-plan/meta.json"
+    },
+    {
+      "id": "wpbt",
+      "title": "Disable Windows Platform Binary Table",
+      "description": "Prevents your computer vendor from executing programs at boot, reducing potential security risks.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.14.1",
+      "docsurl": "https://docs.getsparkle.net/tweaks/wpbt",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/wpbt/meta.json"
+    }
+  ]
+}

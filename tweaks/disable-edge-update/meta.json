@@ -1,0 +1,10 @@
+{
+  "title": "Disable Edge Auto Update",
+  "name": "disable-edge-update",
+  "description": "Disables Edge automatic updates.",
+  "category": [
+    "Privacy",
+    "Performance"
+  ],
+  "recommended": false
+}

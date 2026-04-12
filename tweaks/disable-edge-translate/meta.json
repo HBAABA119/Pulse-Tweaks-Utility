@@ -1,0 +1,10 @@
+{
+  "title": "Disable Edge Translate",
+  "name": "disable-edge-translate",
+  "description": "Disables Edge translate feature.",
+  "category": [
+    "Privacy",
+    "Appearance"
+  ],
+  "recommended": false
+}

@@ -1,0 +1,1 @@
+{"title": "Disable IPv6", "name": "disable-ipv6", "description": "Disables IPv6 to improve network performance on IPv4-only networks.", "category": ["Network", "Performance"], "recommended": false}

@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-notification",
+  "title": "Disable Defender Notification",
+  "description": "Disables Defender notifications.",
+  "category": ["Privacy", "Appearance"],
+  "recommended": false
+}

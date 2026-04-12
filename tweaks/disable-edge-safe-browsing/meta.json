@@ -1,0 +1,10 @@
+{
+  "title": "Disable Edge Safe Browsing",
+  "name": "disable-edge-safe-browsing",
+  "description": "Disables Edge safe browsing.",
+  "category": [
+    "Privacy",
+    "Security"
+  ],
+  "recommended": false
+}

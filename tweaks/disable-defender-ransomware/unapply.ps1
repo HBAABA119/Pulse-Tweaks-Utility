@@ -1,0 +1,1 @@
+Set-MpPreference -DisableRansomwareProtection 0

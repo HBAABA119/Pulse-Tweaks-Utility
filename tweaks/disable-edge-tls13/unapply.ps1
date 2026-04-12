@@ -1,0 +1,1 @@
+Remove-ItemProperty -Path \HKLM:\SOFTWARE\Policies\Microsoft\Edge\ -Name \SSLVersionMin\ -ErrorAction SilentlyContinue

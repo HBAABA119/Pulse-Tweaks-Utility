@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-scan",
+  "title": "Disable Defender Scan",
+  "description": "Disables Defender real-time scanning.",
+  "category": ["Privacy", "Performance"],
+  "recommended": false
+}

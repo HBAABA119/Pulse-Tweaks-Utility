@@ -1,0 +1,1 @@
+Set-ItemProperty -Path \HKLM:\SOFTWARE\Policies\Microsoft\Edge\ -Name \SafeBrowsingEnabled\ -Value 1 -Type DWord

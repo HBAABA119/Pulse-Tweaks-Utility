@@ -1,0 +1,1 @@
+Set-MpPreference -MAPSReporting 1; Set-MpPreference -SubmitSamplesConsent 1

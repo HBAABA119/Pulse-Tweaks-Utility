@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-sample",
+  "title": "Disable Defender Sample",
+  "description": "Disables Defender sample submission.",
+  "category": ["Privacy"],
+  "recommended": true
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Disable Defender Exclusions",
+  "name": "disable-defender-exclusions",
+  "description": "Adds broad exclusions to Defender.",
+  "category": [
+    "Privacy",
+    "Security"
+  ],
+  "recommended": false
+}

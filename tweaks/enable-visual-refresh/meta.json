@@ -1,0 +1,9 @@
+{
+  "title": "Enable Visual Refresh",
+  "name": "enable-visual-refresh",
+  "description": "Enables Windows visual refresh effects for a more modern look.",
+  "category": [
+    "Appearance"
+  ],
+  "recommended": false
+}

@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-cloud",
+  "title": "Disable Defender Cloud",
+  "description": "Disables Defender cloud protection.",
+  "category": ["Privacy"],
+  "recommended": true
+}

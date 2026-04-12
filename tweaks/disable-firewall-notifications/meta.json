@@ -1,0 +1,7 @@
+{
+  "name": "disable-firewall-notifications",
+  "title": "Disable Firewall Notifications",
+  "description": "Disables Windows Firewall notifications.",
+  "category": ["Privacy", "Appearance"],
+  "recommended": true
+}

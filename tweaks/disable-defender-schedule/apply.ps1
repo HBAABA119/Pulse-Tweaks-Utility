@@ -1,0 +1,1 @@
+Set-MpPreference -ScanScheduleQuick 0; Set-MpPreference -ScanScheduleCustom 0

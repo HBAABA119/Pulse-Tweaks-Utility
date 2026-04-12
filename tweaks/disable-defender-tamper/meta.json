@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-tamper",
+  "title": "Disable Defender Tamper",
+  "description": "Disables Defender tamper protection.",
+  "category": ["Privacy", "Security"],
+  "recommended": false
+}

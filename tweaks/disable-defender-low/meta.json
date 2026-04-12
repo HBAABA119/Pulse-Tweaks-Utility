@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-low",
+  "title": "Disable Defender Low Priority",
+  "description": "Sets Defender threat actions to ignore.",
+  "category": ["Privacy", "Security"],
+  "recommended": false
+}

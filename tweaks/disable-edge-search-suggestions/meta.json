@@ -1,0 +1,9 @@
+{
+  "title": "Disable Edge Search Suggestions",
+  "name": "disable-edge-search-suggestions",
+  "description": "Disables Edge search suggestions.",
+  "category": [
+    "Privacy"
+  ],
+  "recommended": true
+}

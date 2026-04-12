@@ -1,0 +1,160 @@
+{
+  "name": "void-optimizer",
+  "version": "1.0.0",
+  "description": "Void Optimizer",
+  "main": "./out/main/index.js",
+  "author": "The Void Team",
+  "homepage": "https://voidoptimizer.net",
+  "scripts": {
+    "format": "prettier --write .",
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev -w",
+    "build": "node build.js",
+    "build:registry": "npm run build -- --registry",
+    "build:electron": "npm run build:vite && electron-builder",
+    "build:vite": "electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:unpack": "npm run build && electron-builder --dir",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json --composite false",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json --composite false",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.2",
+    "@electron-toolkit/utils": "^4.0.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@lucide/lab": "^0.1.2",
+    "@mui/icons-material": "^7.3.9",
+    "@mui/lab": "^7.0.1-beta.23",
+    "@mui/material": "^7.3.9",
+    "clsx": "^2.1.1",
+    "discord-rpc": "^4.0.1",
+    "electron-log": "^5.4.3",
+    "electron-store": "8.1.0",
+    "electron-updater": "^6.6.2",
+    "lucide-react": "^0.542.0",
+    "posthog-js": "^1.261.7",
+    "react-router-dom": "^7.8.2",
+    "react-toastify": "^11.0.5",
+    "systeminformation": "^5.27.8",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@electron-toolkit/eslint-config": "^2.1.0",
+    "@electron-toolkit/eslint-config-prettier": "^3.0.0",
+    "@electron-toolkit/tsconfig": "^1.0.1",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^25.0.8",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@types/systeminformation": "^3.23.1",
+    "@vitejs/plugin-react": "^4.7.0",
+    "electron": "38.0.0",
+    "electron-builder": "^26.0.12",
+    "electron-vite": "4.0.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "vite": "^6.3.5"
+  },
+  "repository": "https://github.com/olsakeralexander/Void-Optimizer",
+  "build": {
+    "electronLanguages": [
+      "en-US"
+    ],
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "olsakeralexander",
+        "repo": "Void-Optimizer",
+        "releaseType": "release"
+      }
+    ],
+    "extraResources": [
+      {
+        "from": "resources",
+        "to": ".",
+        "filter": [
+          "*.exe",
+          "*.nip",
+          "*.pow"
+        ]
+      }
+    ],
+    "appId": "com.parcoil.void-optimizer",
+    "productName": "Void Optimizer",
+    "directories": {
+      "buildResources": "build"
+    },
+    "files": [
+      "!**/.vscode/*",
+      "!src/*",
+      "!dist-old",
+      "!dist-2",
+      "!electron-builde.yml",
+      "!images/*",
+      "!electron.vite.config.{js,ts,mjs,cjs}",
+      "!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}",
+      "!{.env,.env.*,.npmrc,pnpm-lock.yaml,yarn.lock}",
+      "!docs/**",
+      "!eslint.config.mjs",
+      "!get.ps1",
+      "!license",
+      "!trusted-dependencies-scripts.json",
+      "!postcss.config.js",
+      "!tsconfig.json",
+      "!tsconfig.node.json",
+      "!tsconfig.web.json",
+      "!build.js",
+      "!jsconfig.json",
+      "!LICENSE",
+      "!chocolatey/**",
+      "!node_modules/@headlessui/**",
+      "!node_modules/@lucide/**",
+      "!node_modules/lucide-react/**",
+      "!node_modules/react/**",
+      "!node_modules/preact/**",
+      "!node_modules/react-dom/**",
+      "!node_modules/react-router-dom/**",
+      "!node_modules/react-router/**",
+      "!node_modules/react-toastify/**",
+      "!node_modules/tailwindcss/**",
+      "!node_modules/postcss/**",
+      "!node_modules/zustand/**",
+      "!node_modules/posthog-js/**",
+      "!node_modules/@posthog/**",
+      "!node_modules/@opentelemetry/**",
+      "!node_modules/postgres/**",
+      "!node_modules/clsx/**",
+      "!node_modules/debounce/**",
+      "!node_modules/js-tokens/**",
+      "!node_modules/loose-envify/**",
+      "!node_modules/object-assign/**",
+      "!node_modules/prop-types/**",
+      "!node_modules/react-is/**",
+      "!node_modules/scheduler/**",
+      "!node_modules/uuid/**"
+    ],
+    "win": {
+      "executableName": "voidoptimizer",
+      "requestedExecutionLevel": "requireAdministrator",
+      "signAndEditExecutable": false,
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "nsis": {
+      "artifactName": "${name}-${version}-setup.${ext}",
+      "shortcutName": "${productName}",
+      "uninstallDisplayName": "${productName}",
+      "createDesktopShortcut": "always"
+    },
+    "npmRebuild": false
+  },
+  "packageManager": "npm@11.8.0"
+}

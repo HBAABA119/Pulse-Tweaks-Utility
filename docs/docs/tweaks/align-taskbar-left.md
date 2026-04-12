@@ -1,0 +1,10 @@
+# Align Taskbar Left
+
+## Overview
+- **ID/URL**: `align-taskbar-left`
+- **Description**: Aligns the taskbar to the left side of the screen.
+
+## Details
+
+- Forces the Windows taskbar to align left by editing the system registry. by setting the 'TaskbarAl' registry value to 0
+

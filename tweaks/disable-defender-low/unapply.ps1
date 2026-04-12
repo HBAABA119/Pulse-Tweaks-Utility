@@ -1,0 +1,1 @@
+Set-MpPreference -LowThreatDefaultAction 0; Set-MpPreference -ModerateThreatDefaultAction 0; Set-MpPreference -HighThreatDefaultAction 0

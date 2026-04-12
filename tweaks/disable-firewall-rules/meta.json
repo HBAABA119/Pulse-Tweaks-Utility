@@ -1,0 +1,7 @@
+{
+  "name": "disable-firewall-rules",
+  "title": "Disable Firewall Rules",
+  "description": "Removes all Windows Firewall rules.",
+  "category": ["Privacy", "Security"],
+  "recommended": false
+}

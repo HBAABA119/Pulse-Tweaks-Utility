@@ -1,0 +1,10 @@
+{
+  "title": "Disable Edge News Feed",
+  "name": "disable-edge-news-feed",
+  "description": "Disables Edge news feed on new tab.",
+  "category": [
+    "Privacy",
+    "Appearance"
+  ],
+  "recommended": true
+}

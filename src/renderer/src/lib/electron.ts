@@ -1,0 +1,25 @@
+export function minimize() {
+  window.electron.ipcRenderer.send("window-minimize")
+}
+
+export function toggleMaximize() {
+  window.electron.ipcRenderer.send("window-toggle-maximize")
+}
+
+export function close() {
+  window.electron.ipcRenderer.send("window-close")
+}
+
+export async function invoke({
+  channel,
+  payload,
+}: {
+  channel: string
+  payload?: any
+}): Promise<any> {
+  return window.electron.ipcRenderer.invoke(channel, payload)
+}
+
+export function send(channel: string, ...args: any[]): void {
+  window.electron.ipcRenderer.send(channel, ...args)
+}

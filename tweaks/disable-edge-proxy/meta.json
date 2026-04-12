@@ -1,0 +1,10 @@
+{
+  "title": "Disable Edge Proxy",
+  "name": "disable-edge-proxy",
+  "description": "Disables Edge proxy settings.",
+  "category": [
+    "Privacy",
+    "Performance"
+  ],
+  "recommended": false
+}

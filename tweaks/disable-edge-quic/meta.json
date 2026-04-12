@@ -1,0 +1,10 @@
+{
+  "title": "Disable Edge QUIC",
+  "name": "disable-edge-quic",
+  "description": "Disables Edge QUIC protocol.",
+  "category": [
+    "Privacy",
+    "Performance"
+  ],
+  "recommended": true
+}

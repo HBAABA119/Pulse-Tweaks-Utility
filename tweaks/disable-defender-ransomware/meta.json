@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-ransomware",
+  "title": "Disable Defender Ransomware",
+  "description": "Disables Defender ransomware protection.",
+  "category": ["Privacy", "Security"],
+  "recommended": false
+}

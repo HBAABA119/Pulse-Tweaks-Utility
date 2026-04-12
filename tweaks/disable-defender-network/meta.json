@@ -1,0 +1,7 @@
+{
+  "name": "disable-defender-network",
+  "title": "Disable Defender Network",
+  "description": "Disables Defender network protection.",
+  "category": ["Privacy", "Security"],
+  "recommended": false
+}

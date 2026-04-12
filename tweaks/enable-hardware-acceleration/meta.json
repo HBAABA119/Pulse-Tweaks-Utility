@@ -1,0 +1,1 @@
+{"title": "Enable Hardware Acceleration", "name": "enable-hardware-acceleration", "description": "Enables GPU hardware acceleration for UI rendering.", "category": ["Performance"], "recommended": true}

@@ -1,0 +1,1 @@
+{"title": "Disable Search Indexing", "name": "disable-search-indexing", "description": "Disables Windows Search Indexing for better SSD performance and lower resource usage.", "category": ["Performance"], "recommended": true}
