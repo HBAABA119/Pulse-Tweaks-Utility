@@ -75,7 +75,7 @@ export default function UpdateManager(): React.ReactElement {
             ? "The update has been downloaded. Restart to install now."
             : isDownloading
               ? `Downloading update… ${Math.floor(downloadPercent)}%`
-              : "A new version is available. Please update to ensure Void Optimizer keeps working properly."}
+              : "A new version is available. Please update to ensure Pulse Tweaks Utility keeps working properly."}
         </p>
         <div className="flex justify-end gap-3">
           <Button onClick={handleUpdateNow} disabled={isDownloading}>

@@ -85,7 +85,7 @@ function Apps() {
     const url = URL.createObjectURL(blob)
     const a = document.createElement("a")
     a.href = url
-    a.download = "void-apps.json"
+    a.download = "pulse-apps.json"
     a.click()
     URL.revokeObjectURL(url)
   }

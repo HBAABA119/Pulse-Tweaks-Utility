@@ -1,10 +1,10 @@
 {
-  "name": "void-optimizer",
+  "name": "pulse-tweaks",
   "version": "1.0.0",
-  "description": "Void Optimizer",
+  "description": "Pulse Tweaks Utility",
   "main": "./out/main/index.js",
-  "author": "The Void Team",
-  "homepage": "https://voidoptimizer.net",
+  "author": "Pulse Team",
+  "homepage": "https://pulsetweaks.net",
   "scripts": {
     "format": "prettier --write .",
     "start": "electron-vite preview",
@@ -61,7 +61,7 @@
     "typescript": "^5.9.3",
     "vite": "^6.3.5"
   },
-  "repository": "https://github.com/HBAABA119/Void-Optimizations",
+  "repository": "https://github.com/HBAABA119/Pulse-Tweaks",
   "build": {
     "electronLanguages": [
       "en-US"
@@ -70,7 +70,7 @@
       {
         "provider": "github",
         "owner": "HBAABA119",
-        "repo": "Void-Optimizations",
+        "repo": "Pulse-Tweaks",
         "releaseType": "release"
       }
     ],
@@ -85,11 +85,12 @@
         ]
       }
     ],
-    "appId": "com.parcoil.void-optimizer",
-    "productName": "Void Optimizer",
+    "appId": "com.hbaaba119.pulse-tweaks",
+    "productName": "Pulse Tweaks Utility",
     "directories": {
       "buildResources": "build"
     },
+    "icon": "resources/Pulse-Tweaks-Logo.ico",
     "files": [
       "!**/.vscode/*",
       "!src/*",
@@ -140,7 +141,7 @@
       "!node_modules/uuid/**"
     ],
     "win": {
-      "executableName": "voidoptimizer",
+      "executableName": "pulsetweaks",
       "requestedExecutionLevel": "requireAdministrator",
       "signAndEditExecutable": false,
       "target": [

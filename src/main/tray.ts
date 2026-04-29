@@ -2,15 +2,15 @@ import { Tray, Menu, app, BrowserWindow } from "electron"
 import path from "path"
 
 export function createTray(mainWindow: BrowserWindow): Tray {
-  const tray = new Tray(path.join(__dirname, "../../resources/sparkle2.ico"))
+  const tray = new Tray(path.join(__dirname, "../../resources/Pulse-Tweaks-Logo.ico"))
 
   const contextMenu = Menu.buildFromTemplate([
     { label: "Open Window", click: (): void => mainWindow.show() },
     { label: "Quit", click: (): void => app.quit() },
   ])
 
-  tray.setToolTip("Void Optimizer")
-  tray.setTitle("Void Optimizer")
+  tray.setToolTip("Pulse Tweaks Utility")
+  tray.setTitle("Pulse Tweaks Utility")
   tray.setContextMenu(contextMenu)
   tray.on("click", (): void => ToggleWindowState(mainWindow))
 

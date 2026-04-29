@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
 
   const variants: Record<ButtonVariant, string> = {
     primary:
-      "bg-void-primary text-white shadow-lg shadow-purple-600/20 hover:shadow-purple-600/40 hover:scale-[1.02] border-none",
+      "bg-void-primary text-white shadow-lg shadow-blue-600/20 hover:shadow-blue-600/40 hover:scale-[1.02] border-none",
     outline:
       "border border-void-border text-void-text-secondary hover:border-void-primary hover:text-void-primary bg-void-card/50 backdrop-blur-sm shadow-xl",
     secondary:

@@ -4,7 +4,7 @@ import log from "electron-log"
 console.log = log.log
 console.error = log.error
 
-const CLIENT_ID = "1474403594064105645" // Void Optimizer Discord app
+const CLIENT_ID = "1498882784880754728" // Pulse Tweaks Discord app
 
 let rpc: Client | null = null
 let startTimestamp: number = Date.now()
@@ -43,9 +43,11 @@ async function connect(): Promise<void> {
   try {
     await rpc.login({ clientId: CLIENT_ID })
   } catch (error) {
-    console.error("[Discord RPC]: Failed to connect", error)
+    // console.error("[Discord RPC]: Failed to connect", error)
     rpc = null
     isConnected = false
+    // Retry in 15 seconds if failed
+    setTimeout(connect, 15000)
   }
 }
 
@@ -65,8 +67,8 @@ function updateActivity(): void {
     details: `Browsing ${currentPage}`,
     state: appliedTweaksCount > 0 ? `${appliedTweaksCount} tweaks applied` : "No tweaks applied",
     startTimestamp,
-    largeImageKey: "void_optimizer_logo",
-    largeImageText: "Void Optimizer",
+    largeImageKey: "pulse-logo",
+    largeImageText: "Pulse Tweaks Utility",
     smallImageKey: "settings",
     smallImageText: "Optimizing PC",
     instance: false,
@@ -74,7 +76,7 @@ function updateActivity(): void {
 
   // Add buttons
   activity.buttons = [
-    { label: "Join the Discord Server", url: "https://discord.gg/EQQsPU4Sq6" },
+    { label: "Join the Discord Server", url: "https://discord.gg/D9HJAyZcTp" },
   ]
 
   rpc.setActivity(activity).catch((err) => {
@@ -99,15 +101,15 @@ export function tweakApplied(tweakName: string): void {
     details: `Applied: ${tweakName}`,
     state: `${appliedTweaksCount + 1} tweaks applied`,
     startTimestamp,
-    largeImageKey: "void_optimizer_logo",
-    largeImageText: "Void Optimizer",
+    largeImageKey: "pulse-logo",
+    largeImageText: "Pulse Tweaks Utility",
     smallImageKey: "check",
     smallImageText: "Tweak Applied",
     instance: false,
   }
 
   activity.buttons = [
-    { label: "Join the Discord Server", url: "https://discord.gg/EQQsPU4Sq6" },
+    { label: "Join the Discord Server", url: "https://discord.gg/D9HJAyZcTp" },
   ]
 
   rpc.setActivity(activity).catch((err) => {
@@ -128,15 +130,15 @@ export function tweakUnapplied(tweakName: string): void {
     details: `Unapplied: ${tweakName}`,
     state: `${Math.max(0, appliedTweaksCount - 1)} tweaks applied`,
     startTimestamp,
-    largeImageKey: "void_optimizer_logo",
-    largeImageText: "Void Optimizer",
+    largeImageKey: "pulse-logo",
+    largeImageText: "Pulse Tweaks Utility",
     smallImageKey: "remove",
     smallImageText: "Tweak Removed",
     instance: false,
   }
 
   activity.buttons = [
-    { label: "Join the Discord Server", url: "https://discord.gg/EQQsPU4Sq6" },
+    { label: "Join the Discord Server", url: "https://discord.gg/D9HJAyZcTp" },
   ]
 
   rpc.setActivity(activity).catch((err) => {

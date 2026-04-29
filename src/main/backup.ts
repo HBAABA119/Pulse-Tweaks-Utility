@@ -53,7 +53,7 @@ interface BackupResult {
 }
 
 ipcMain.handle("create-void-restore-point", async (): Promise<BackupResult> => {
-  const label = `VoidBackup-${getTimestamp()}`
+  const label = `PulseBackup-${getTimestamp()}`
   try {
     await runPowerShell(`Checkpoint-Computer -Description '${label}' -RestorePointType MODIFY_SETTINGS`)
     await changeRestorePointCooldown()
@@ -166,14 +166,14 @@ ipcMain.handle(
 
 ipcMain.handle("delete-old-void-backups", async (): Promise<BackupResult> => {
   return new Promise((resolve, reject) => {
-    const voidRoot = `C:\\VoidOptimizer`
+    const voidRoot = `C:\\PulseTweaks`
     if (!fs.existsSync(voidRoot)) {
-      return resolve({ success: true, message: "VoidOptimizer folder does not exist" })
+      return resolve({ success: true, message: "PulseTweaks folder does not exist" })
     }
 
     fs.rm(voidRoot, { recursive: true, force: true }, (err) => {
       if (err) return reject(err)
-      resolve({ success: true, message: "VoidOptimizer folder deleted" })
+      resolve({ success: true, message: "PulseTweaks folder deleted" })
     })
   })
 })

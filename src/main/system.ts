@@ -200,8 +200,8 @@ function getUserName(): string {
 function clearVoidOptimizerCache(): ClearCacheResult {
   try {
     const appDataPath = process.env.APPDATA || path.join(os.homedir(), "AppData", "Roaming")
-    const scriptsPath = path.join(appDataPath, "void", "scripts")
-    const logsPath = path.join(appDataPath, "void", "logs")
+    const scriptsPath = path.join(appDataPath, "pulse", "scripts")
+    const logsPath = path.join(appDataPath, "pulse", "logs")
 
     let scriptsCleared = false
     let logsCleared = false
@@ -221,9 +221,9 @@ function clearVoidOptimizerCache(): ClearCacheResult {
       }
 
       scriptsCleared = true
-      console.log("Void Optimizer scripts directory files cleared successfully.")
+      console.log("Pulse Tweaks Utility scripts directory files cleared successfully.")
     } else {
-      console.warn("Void Optimizer scripts directory does not exist.")
+      console.warn("Pulse Tweaks Utility scripts directory does not exist.")
       errors.push("Scripts directory does not exist.")
     }
 
@@ -240,9 +240,9 @@ function clearVoidOptimizerCache(): ClearCacheResult {
         }
       }
       logsCleared = true
-      console.log("Void Optimizer logs directory files cleared successfully.")
+      console.log("Pulse Tweaks Utility logs directory files cleared successfully.")
     } else {
-      console.warn("Void Optimizer logs directory does not exist.")
+      console.warn("Pulse Tweaks Utility logs directory does not exist.")
       errors.push("Logs directory does not exist.")
     }
 
@@ -255,7 +255,7 @@ function clearVoidOptimizerCache(): ClearCacheResult {
       }
     }
   } catch (error: any) {
-    console.error("Failed to clear Void Optimizer scripts or logs directory:", error)
+    console.error("Failed to clear Pulse Tweaks Utility scripts or logs directory:", error)
     return { success: false, error: error.message }
   }
 }
@@ -263,7 +263,7 @@ function clearVoidOptimizerCache(): ClearCacheResult {
 function openLogFolder(): { success: boolean; error?: string } {
   const logPath = path.join(
     process.env.APPDATA || path.join(os.homedir(), "AppData", "Roaming"),
-    "void",
+    "pulse",
     "logs",
   )
   if (fs.existsSync(logPath)) {
@@ -297,7 +297,7 @@ function Show-InstallerGUI {
     $form.StartPosition = "CenterScreen"
 
     $label = New-Object System.Windows.Forms.Label
-    $label.Text = "Welcome! Void Optimizer needs Winget to install apps."
+    $label.Text = "Welcome! Pulse Tweaks Utility needs Winget to install apps."
     $label.AutoSize = $true
     $label.Location = New-Object System.Drawing.Point(20,20)
     $form.Controls.Add($label)
@@ -356,7 +356,7 @@ function Show-InstallerGUI {
             $wingetInstalled = Check-Winget
 
             if ($TestMode -or -not $wingetInstalled) {
-                $result.Messages += "Winget not found. Installing for Void Optimizer..."
+                $result.Messages += "Winget not found. Installing for Pulse Tweaks Utility..."
                 
                 try {
                     $result.Messages += "Attempting to register App Installer..."
@@ -505,7 +505,7 @@ function Show-InstallerGUI {
 if ($TestMode -or -not (Check-Winget)) {
     Show-InstallerGUI
 } else {
-    Write-Output "Winget is already installed. Void Optimizer can install apps!"
+    Write-Output "Winget is already installed. Pulse Tweaks Utility can install apps!"
 }
 `
 

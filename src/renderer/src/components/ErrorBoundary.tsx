@@ -4,8 +4,7 @@ import { invoke } from "../lib/electron"
 import Button from "./ui/button"
 import TitleBar from "./titlebar"
 
-const GITHUB_ISSUES = "https://github.com/Parcoil/Sparkle/issues"
-const DISCORD_INVITE = "https://discord.com/invite/En5YJYWj3Z"
+const DISCORD_INVITE = "https://discord.gg/D9HJAyZcTp"
 
 type Props = {
   children: ReactNode
@@ -45,13 +44,13 @@ class ErrorBoundary extends Component<Props, State> {
       const errorStack = this.state.error instanceof Error ? this.state.error.stack : undefined
 
       return (
-        <div className="flex flex-col h-screen bg-void-bg text-void-text items-center justify-center p-8">
+        <div className="flex flex-col h-screen text-void-text items-center justify-center p-8" style={{ background: 'transparent' }}>
           {/* @ts-expect-error */}
           <TitleBar />
           <div className="max-w-xl w-full rounded-2xl border border-void-border bg-void-card p-8">
             <h1 className="text-2xl font-semibold text-red-500 mb-2">Something went wrong</h1>
             <p className="text-void-text-secondary mb-4">
-              Void Optimizer encountered an unexpected error. Please help us fix it by reporting this
+              Pulse Tweaks Utility encountered an unexpected error. Please help us fix it by reporting this
               issue.
             </p>
             <pre className="mb-6 p-4 rounded-lg bg-void-accent text-xs text-void-text overflow-x-auto overflow-y-auto max-h-40 border border-void-border select-all">
@@ -67,16 +66,7 @@ class ErrorBoundary extends Component<Props, State> {
               </Button>
             </div>
             <p className="text-sm text-void-text-muted">
-              Please{" "}
-              <a
-                href={GITHUB_ISSUES}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-void-primary hover:underline"
-              >
-                create a GitHub issue
-              </a>{" "}
-              or share the error and log file in our{" "}
+              Please create a ticket and share the error and log file in our{" "}
               <a
                 href={DISCORD_INVITE}
                 target="_blank"

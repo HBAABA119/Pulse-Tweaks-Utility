@@ -8,7 +8,6 @@ import { ToastContainer, Slide } from "react-toastify"
 import Home from "./pages/Home"
 import Tweaks from "./pages/Tweaks"
 import Clean from "./pages/Clean"
-import Apps from "./pages/Apps"
 import Utilities from "./pages/Utilities"
 import DNS from "./pages/DNS"
 import Settings from "./pages/Settings"
@@ -66,7 +65,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col h-screen bg-void-bg text-void-text overflow-hidden font-sans">
+    <div className="flex flex-col h-screen text-void-text overflow-hidden font-sans" style={{ background: 'transparent' }}>
       <FirstTime />
       <TitleBar onToggleSidebar={toggleSidebar} sidebarCollapsed={sidebarCollapsed} />
       
@@ -87,7 +86,6 @@ function App() {
               <Route path="/backup" element={<Backup />} />
               <Route path="/utilities" element={<Utilities />} />
               <Route path="/dns" element={<DNS />} />
-              <Route path="/apps" element={<Apps />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

@@ -1,6 +1,6 @@
 import { Menu, Minus, Square, X } from "lucide-react"
 import { close, minimize, toggleMaximize } from "../lib/electron"
-import sparkleLogo from "../../../../resources/sparklelogo.png"
+import pulseLogo from "../../../../resources/Pulse-Background-Removed.png"
 
 interface TitleBarProps {
   onToggleSidebar: () => void
@@ -26,8 +26,8 @@ function TitleBar({
             <Menu size={18} />
           </button>
           <div className="flex items-center gap-2">
-            <img src={sparkleLogo} alt="Void Optimizer" className="h-6 w-6" />
-            <span className="text-white text-base font-bold tracking-tight">Void Optimizer</span>
+            <img src={pulseLogo} alt="Pulse Tweaks Utility" className="h-6 w-6" />
+            <span className="text-white text-base font-bold tracking-tight">Pulse Tweaks Utility</span>
           </div>
           <div className="bg-void-primary/20 border border-void-primary/30 px-2 py-0.5 rounded-lg text-[10px] font-bold text-void-primary uppercase tracking-wider">
             Beta

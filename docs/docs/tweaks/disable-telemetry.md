@@ -6,7 +6,7 @@
 
 ## Details
 
-- Disables Windows telemetry by modifying registry keys to prevent data collection and reporting to ~~Microsoft~~ Microslop. This tweak was previously in Void Optimizer but was removed issues with the tweak not applying correctly. It has been re-added.
+- Disables Windows telemetry by modifying registry keys to prevent data collection and reporting to ~~Microsoft~~ Microslop. This tweak was previously in Pulse Tweaks Utility but was removed due to issues with the tweak not applying correctly. It has been re-added.
 
 
 
@@ -14,4 +14,4 @@
     This tweak is recommended.
 
 !!! note 
-    This tweak was added in V1, Void Optimizer V1+ is required.
+    This tweak was added in V1, Pulse Tweaks Utility V1+ is required.

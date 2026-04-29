@@ -61,7 +61,7 @@ const dnsProviders = [
     secondary: "149.112.112.112",
     description: "Security-focused DNS with threat blocking",
     features: ["Security", "Threat blocking", "Privacy"],
-    color: "text-purple-500",
+    color: "text-blue-500",
     icon: <Shield className="w-5 h-5" />,
   },
   {
@@ -295,7 +295,7 @@ export default function DNSPage() {
 
           <Card className="p-4 mb-6">
             <div className="flex items-center gap-3 ">
-              <Settings className="w-5 h-5 text-purple-500" />
+              <Settings className="w-5 h-5 text-blue-500" />
               <h2 className="font-semibold">Custom DNS</h2>
               <Button onClick={() => setShowCustom(!showCustom)} size="sm">
                 {showCustom ? "Hide" : "Show"}

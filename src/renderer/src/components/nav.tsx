@@ -7,14 +7,12 @@ import {
   Folder,
   Home,
   Icon,
-  LayoutGrid,
   RefreshCw,
   Settings,
   Wrench,
 } from "lucide-react"
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
-import info from "../../../../package.json"
 import useRestartStore from "../store/restartState"
 import DiscordIcon from "./discordicon"
 import Button from "./ui/button"
@@ -27,7 +25,6 @@ const tabIcons = {
   backup: <Folder size={20} />,
   utilities: <Box size={20} />,
   dns: <EthernetPort size={20} />,
-  apps: <LayoutGrid size={20} />,
   settings: <Settings size={20} />,
 }
 
@@ -38,7 +35,6 @@ const tabs = {
   clean: { label: "Cleaner", path: "/clean" },
   backup: { label: "Restore Points", path: "/backup" },
   dns: { label: "DNS Manager", path: "/dns" },
-  apps: { label: "Apps", path: "/apps" },
   settings: { label: "Settings", path: "/settings" },
 }
 
@@ -61,7 +57,7 @@ function Nav({ collapsed }) {
   return (
     <nav
       className={clsx(
-        "fixed left-4 top-1/2 -translate-y-1/2 flex flex-col items-center py-6 z-40 transition-all duration-300 ease-in-out bg-void-card/80 backdrop-blur-xl border border-void-border rounded-2xl shadow-2xl shadow-purple-900/20",
+        "fixed left-4 top-1/2 -translate-y-1/2 flex flex-col items-center py-6 z-40 transition-all duration-300 ease-in-out bg-void-card/80 backdrop-blur-xl border border-void-border rounded-2xl shadow-2xl shadow-blue-900/20",
         collapsed ? "w-16 h-[70vh]" : "w-20 h-[85vh]"
       )}
     >
@@ -74,16 +70,13 @@ function Nav({ collapsed }) {
             className={clsx(
               "flex items-center justify-center p-3 rounded-xl transition-all duration-300 group relative",
               activeTab === id
-                ? "bg-void-primary text-white shadow-lg shadow-purple-600/40 scale-110"
+                ? "bg-void-primary text-white shadow-lg shadow-blue-600/40 scale-110"
                 : "text-void-text-secondary hover:bg-void-border hover:text-void-primary"
             )}
           >
             <div className="transition-transform duration-300 group-hover:scale-110">
               {tabIcons[id]}
             </div>
-            {id === "utilities" && (
-              <span className="absolute -top-1 -right-1 w-2 h-2 bg-void-accent rounded-full animate-pulse" />
-            )}
           </button>
         ))}
       </div>
@@ -100,7 +93,7 @@ function Nav({ collapsed }) {
         )}
 
         <div className="flex flex-col items-center gap-3">
-          <a href="https://discord.gg/2TjxsyYhy3" target="_blank" className="text-void-text-secondary hover:text-void-primary transition-colors">
+          <a href="https://discord.gg/D9HJAyZcTp" target="_blank" className="text-void-text-secondary hover:text-void-primary transition-colors">
             <DiscordIcon className="w-5 h-5 fill-current" />
           </a>
         </div>

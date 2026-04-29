@@ -55,7 +55,7 @@ export default function FirstTime(): React.ReactElement {
   return (
     <Modal open={open} onClose={undefined}>
       <div className="bg-void-card border border-void-border rounded-2xl p-8 shadow-2xl max-w-2xl w-full mx-4 flex flex-col items-center text-center">
-        <h1 className="text-3xl font-bold text-void-text mb-4">Welcome to Void Optimizer</h1>
+        <h1 className="text-3xl font-bold text-void-text mb-4">Welcome to Pulse Tweaks Utility</h1>
 
         <p className="text-void-text-secondary mb-6">
           It looks like this is your first time here. <br />
@@ -64,7 +64,7 @@ export default function FirstTime(): React.ReactElement {
 
         <p className="text-void-text-secondary mb-4 text-sm">
           <span className="font-medium">
-            By clicking <strong>Yes</strong>, Void Optimizer will create a restore point and disable the
+            By clicking <strong>Yes</strong>, Pulse Tweaks Utility will create a restore point and disable the
             cooldown for future restore points.
           </span>
         </p>
@@ -83,7 +83,7 @@ export default function FirstTime(): React.ReactElement {
         </div>
 
         <p className="text-void-text-secondary mt-4 text-sm">
-          <span className="font-semibold">Void Optimizer V1</span>
+          <span className="font-semibold">Pulse Tweaks Utility V1</span>
         </p>
       </div>
     </Modal>

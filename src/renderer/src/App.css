@@ -5,16 +5,16 @@ layer(base);
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-void-primary: #8B00FF;
-  --color-void-accent: #C026D3;
+  --color-void-primary: #4169E1;
+  --color-void-accent: #1E90FF;
   --color-void-text: #FFFFFF;
   --color-void-text-secondary: rgba(229, 229, 229, 0.8);
   --color-void-text-muted: rgba(102, 102, 102, 0.7);
   --color-void-bg: #0a0a0a;
-  --color-void-card: rgba(18, 18, 18, 0.7);
-  --color-void-border: rgba(31, 31, 31, 0.5);
-  --color-void-border-secondary: rgba(42, 42, 42, 0.4);
-  --color-void-secondary: rgba(18, 18, 18, 0.6);
+  --color-void-card: rgba(20, 30, 50, 0.7);
+  --color-void-border: rgba(30, 50, 80, 0.5);
+  --color-void-border-secondary: rgba(40, 60, 90, 0.4);
+  --color-void-secondary: rgba(20, 30, 50, 0.6);
 }
 
 @layer base {
@@ -63,15 +63,15 @@ html, body {
 
 @layer utilities {
   :root {
-    --color-void-bg: #0a0a0a;
+    --color-void-bg: transparent;
     --color-void-text: #FFFFFF;
     --color-void-text-secondary: rgba(229, 229, 229, 0.8);
     --color-void-text-muted: rgba(102, 102, 102, 0.7);
-    --color-void-card: rgba(18, 18, 18, 0.7);
-    --color-void-border: rgba(31, 31, 31, 0.5);
-    --color-void-border-secondary: rgba(42, 42, 42, 0.4);
-    --color-void-primary: #8B00FF;
-    --color-void-accent: #C026D3;
+    --color-void-card: rgba(20, 30, 50, 0.7);
+    --color-void-border: rgba(30, 50, 80, 0.5);
+    --color-void-border-secondary: rgba(40, 60, 90, 0.4);
+    --color-void-primary: #4169E1;
+    --color-void-accent: #1E90FF;
   }
 
   .light {
@@ -82,21 +82,21 @@ html, body {
     --color-void-card: rgba(245, 245, 245, 0.7);
     --color-void-border: rgba(224, 224, 224, 0.5);
     --color-void-border-secondary: rgba(209, 209, 209, 0.4);
-    --color-void-primary: #8B00FF;
-    --color-void-accent: #C026D3;
+    --color-void-primary: #4169E1;
+    --color-void-accent: #1E90FF;
   }
   
   /* Retaining theme classes but mapping them to Void-like variations */
   .purple, .gray, .classic {
-    --color-void-bg: #0a0a0a;
+    --color-void-bg: transparent;
     --color-void-text: #FFFFFF;
     --color-void-text-secondary: rgba(229, 229, 229, 0.8);
     --color-void-text-muted: rgba(102, 102, 102, 0.7);
-    --color-void-card: rgba(18, 18, 18, 0.7);
-    --color-void-border: rgba(31, 31, 31, 0.5);
-    --color-void-border-secondary: rgba(42, 42, 42, 0.4);
-    --color-void-primary: #8B00FF;
-    --color-void-accent: #C026D3;
+    --color-void-card: rgba(20, 30, 50, 0.7);
+    --color-void-border: rgba(30, 50, 80, 0.5);
+    --color-void-border-secondary: rgba(40, 60, 90, 0.4);
+    --color-void-primary: #4169E1;
+    --color-void-accent: #1E90FF;
   }
 
   .Toastify__toast {
@@ -133,4 +133,10 @@ button:focus {
 body {
   scrollbar-color: transparent transparent;
   overflow-x: hidden;
+  background: radial-gradient(circle at center, #1a2a4a 0%, #0d1525 50%, #050810 100%) !important;
+  min-height: 100vh;
+}
+
+#root {
+  background: transparent;
 }

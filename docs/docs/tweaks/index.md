@@ -2,8 +2,8 @@
 title: "All Tweaks"
 ---
 
-# Void Optimizer Tweaks
-A collection of tweaks to customize and enhance your Windows experience using Void Optimizer.
+# Pulse Tweaks Utility Tweaks
+A collection of tweaks to customize and enhance your Windows experience using Pulse Tweaks Utility.
 
 _This page is auto-generated._
 

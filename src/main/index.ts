@@ -1,4 +1,4 @@
-import { app, shell, BrowserWindow, ipcMain } from "electron"
+import { app, shell, BrowserWindow, ipcMain, Menu } from "electron"
 import path, { join } from "path"
 import fs from "fs"
 import { electronApp, optimizer, is } from "@electron-toolkit/utils"
@@ -22,7 +22,7 @@ console.log = log.log
 console.error = log.error
 console.warn = log.warn
 
-export const logo = "[Void Optimizer]:"
+export const logo = "[Pulse Tweaks]:"
 log.initialize()
 
 const store = new Store()
@@ -84,11 +84,11 @@ if (!gotTheLock) {
 export let mainWindow: BrowserWindow | null = null
 
 function createWindow(): void {
-  console.log("[Void Optimizer]: createWindow called")
-  console.log("[Void Optimizer]: __dirname =", __dirname)
-  console.log("[Void Optimizer]: icon path =", path.join(__dirname, "../../resources/sparkle2.ico"))
-  console.log("[Void Optimizer]: preload path =", join(__dirname, "../preload/index.js"))
-  console.log("[Void Optimizer]: renderer path =", join(__dirname, "../renderer/index.html"))
+  console.log("[Pulse Tweaks]: createWindow called")
+  console.log("[Pulse Tweaks]: __dirname =", __dirname)
+  console.log("[Pulse Tweaks]: icon path =", path.join(__dirname, "../../resources/Pulse-Tweaks-Logo.ico"))
+  console.log("[Pulse Tweaks]: preload path =", join(__dirname, "../preload/index.js"))
+  console.log("[Pulse Tweaks]: renderer path =", join(__dirname, "../renderer/index.html"))
 
   try {
     mainWindow = new BrowserWindow({
@@ -102,16 +102,18 @@ function createWindow(): void {
       frame: false,
       show: false,
       autoHideMenuBar: true,
-      icon: path.join(__dirname, "../../resources/sparkle2.ico"),
+      icon: path.join(__dirname, "../../resources/Pulse-Tweaks-Logo.ico"),
       webPreferences: {
         preload: join(__dirname, "../preload/index.js"),
         devTools: app.isPackaged ? false : true,
         sandbox: false,
       },
     })
-    console.log("[Void Optimizer]: BrowserWindow created")
+    mainWindow.setMenuBarVisibility(false)
+    mainWindow.removeMenu()
+    console.log("[Pulse Tweaks]: BrowserWindow created")
   } catch (err: any) {
-    console.error("[Void Optimizer]: BrowserWindow creation failed:", err)
+    console.error("[Pulse Tweaks]: BrowserWindow creation failed:", err)
     throw err
   }
 
@@ -121,22 +123,22 @@ function createWindow(): void {
   })
 
   if (is.dev && process.env["ELECTRON_RENDERER_URL"]) {
-    console.log("[Void Optimizer]: Loading renderer from URL:", process.env["ELECTRON_RENDERER_URL"])
+    console.log("[Pulse Tweaks]: Loading renderer from URL:", process.env["ELECTRON_RENDERER_URL"])
     mainWindow.loadURL(process.env["ELECTRON_RENDERER_URL"])
   } else {
-    console.log("[Void Optimizer]: Loading renderer from file")
+    console.log("[Pulse Tweaks]: Loading renderer from file")
     mainWindow.loadFile(join(__dirname, "../renderer/index.html"))
   }
 
   mainWindow.once("ready-to-show", () => {
-    console.log("[Void Optimizer]: Window ready to show")
+    console.log("[Pulse Tweaks]: Window ready to show")
     mainWindow!.show()
   })
 
   mainWindow.webContents.on(
     "did-fail-load",
     (_event: Electron.Event, errorCode: number, errorDescription: string) => {
-      console.error("[Void Optimizer]: Renderer failed to load:", errorCode, errorDescription)
+      console.error("[Pulse Tweaks]: Renderer failed to load:", errorCode, errorDescription)
     },
   )
 }
@@ -144,25 +146,25 @@ function createWindow(): void {
 app
   .whenReady()
   .then(() => {
-    console.log("[Void Optimizer]: App ready, creating window...")
+    console.log("[Pulse Tweaks]: App ready, creating window...")
     try {
       createWindow()
-      console.log("[Void Optimizer]: Window created successfully")
+      console.log("[Pulse Tweaks]: Window created successfully")
     } catch (err: any) {
-      console.error("[Void Optimizer]: createWindow failed:", err)
+      console.error("[Pulse Tweaks]: createWindow failed:", err)
     }
     initAutoUpdater(() => mainWindow)
-    console.log("[Void Optimizer]: Auto updater initialized")
+    console.log("[Pulse Tweaks]: Auto updater initialized")
     initDiscordRPC()
-    console.log("[Void Optimizer]: Discord RPC initialized")
+    console.log("[Pulse Tweaks]: Discord RPC initialized")
     if (store.get("showTray")) {
-      console.log("[Void Optimizer]: Creating tray...")
+      console.log("[Pulse Tweaks]: Creating tray...")
       setTimeout(() => {
         try {
           trayInstance = createTray(mainWindow!)
-          console.log("[Void Optimizer]: Tray created")
+          console.log("[Pulse Tweaks]: Tray created")
         } catch (err: any) {
-          console.error("[Void Optimizer]: Tray creation failed:", err)
+          console.error("[Pulse Tweaks]: Tray creation failed:", err)
         }
       }, 50)
     }
@@ -185,10 +187,13 @@ app
         }
       })
 
-      console.log("[Void Optimizer]: Handlers setup complete")
+      console.log("[Pulse Tweaks]: Handlers setup complete")
     }, 0)
 
-    electronApp.setAppUserModelId("com.parcoil.void-optimizer")
+    electronApp.setAppUserModelId("com.hbaaba119.pulse-tweaks")
+
+    // Disable the application menu
+    Menu.setApplicationMenu(null)
 
     app.on("browser-window-created", (_, window: BrowserWindow) => {
       optimizer.watchWindowShortcuts(window)
@@ -244,5 +249,5 @@ app
     })
   })
   .catch((err: any) => {
-    console.error("[Void Optimizer]: app.whenReady failed:", err)
+    console.error("[Pulse Tweaks]: app.whenReady failed:", err)
   })

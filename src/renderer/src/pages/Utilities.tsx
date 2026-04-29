@@ -11,7 +11,6 @@ import {
   Computer,
   Volume2Icon,
   WifiIcon,
-  RefreshCwIcon,
   Wrench,
   Star,
   NetworkIcon,
@@ -110,38 +109,6 @@ if (Test-Path $path) { Set-ItemProperty -Path $path -Name "HiberbootEnabled" -Ty
 `,
   },
   {
-    name: "Windows Updates",
-    description: "Control how Windows handles automatic updates.",
-    state: false,
-    icon: <RefreshCwIcon />,
-    type: "dropdown",
-    options: ["Default", "Manual", "Disabled"],
-    checkScript: `
-$service = Get-Service -Name wuauserv -ErrorAction SilentlyContinue
-if ($service.StartType -eq 'Automatic') { Write-Output 'Default' }
-elseif ($service.StartType -eq 'Manual') { Write-Output 'Manual' }
-elseif ($service.StartType -eq 'Disabled') { Write-Output 'Disabled' }
-else { Write-Output 'Unknown' }
-`,
-    applyScript: {
-      Default: `
-Set-Service -Name wuauserv -StartupType Automatic
-Start-Service -Name wuauserv -ErrorAction SilentlyContinue
-Write-Output "Windows Update set to Default (Automatic)."
-`,
-      Manual: `
-Set-Service -Name wuauserv -StartupType Manual
-Stop-Service -Name wuauserv -Force -ErrorAction SilentlyContinue
-Write-Output "Windows Update set to Manual."
-`,
-      Disabled: `
-Stop-Service -Name wuauserv -Force -ErrorAction SilentlyContinue
-Set-Service -Name wuauserv -StartupType Disabled
-Write-Output "Windows Update service disabled."
-`,
-    },
-  },
-  {
     name: "Graphics Driver",
     description: "Restart your graphics driver to fix display issues.",
     state: false,
@@ -161,6 +128,22 @@ if ($gpus) {
 } else {
     Write-Output "No active display devices found."
 }
+`,
+  },
+  {
+    name: "Restart Windows Search and UI",
+    description: "Restart your Windows Search and UI to fix display issues. - by @cyfung1031",
+    state: false,
+    icon: <SearchIcon />,
+    type: "button",
+    buttonText: "Restart",
+    runScript: `
+Stop-Process -Name "SearchIndexer" -Force -ErrorAction SilentlyContinue
+Stop-Process -Name "SearchUI" -Force -ErrorAction SilentlyContinue
+Stop-Process -Name "StartMenuExperienceHost" -Force -ErrorAction SilentlyContinue
+Start-Sleep -Seconds 2
+Start-Service -Name "WSearch" -ErrorAction SilentlyContinue
+Write-Output "Windows Search and UI restarted successfully."
 `,
   },
   {

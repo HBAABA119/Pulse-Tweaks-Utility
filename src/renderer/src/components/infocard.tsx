@@ -20,8 +20,8 @@ interface InfoCardProps {
 
 const InfoCard = ({
   icon: Icon,
-  iconBgColor = "bg-purple-500/10",
-  iconColor = "text-purple-400",
+  iconBgColor = "bg-blue-500/10",
+  iconColor = "text-blue-400",
   title,
   subtitle,
   items = [],
@@ -31,7 +31,7 @@ const InfoCard = ({
   return (
     <Card
       className={cn(
-        "bg-void-card/60 backdrop-blur-xl rounded-3xl border border-void-border hover:border-void-primary/30 transition-all duration-500 group hover:shadow-2xl hover:shadow-purple-900/10 p-6",
+        "bg-void-card/60 backdrop-blur-xl rounded-3xl border border-void-border hover:border-void-primary/30 transition-all duration-500 group hover:shadow-2xl hover:shadow-blue-900/10 p-6",
         className,
       )}
       {...props}

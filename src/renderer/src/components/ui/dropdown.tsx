@@ -33,7 +33,7 @@ export function Dropdown({ options, value, onChange }: DropdownProps) {
         />
       </button>
       <div
-        className={`absolute top-full mt-1 w-full bg-void-bg border border-void-border rounded-lg shadow-lg z-10 overflow-hidden transition-all duration-200 origin-top ${
+        className={`absolute top-full mt-1 w-full bg-void-card/50 border border-void-border rounded-lg shadow-lg z-10 overflow-hidden transition-all duration-200 origin-top ${
           isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
         }`}
       >

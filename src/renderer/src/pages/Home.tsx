@@ -134,7 +134,7 @@ function Home() {
           </div>
           <div className="text-void-text-secondary">Loading system information...</div>
           <p className="text-sm text-void-primary">
-            You may use other parts of Void Optimizer while this loads
+            You may use other parts of Pulse Tweaks Utility while this loads
           </p>
         </div>
       </RootDiv>
@@ -154,8 +154,8 @@ function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <InfoCard
             icon={Cpu}
-            iconBgColor="bg-purple-500/10"
-            iconColor="text-purple-400"
+            iconBgColor="bg-blue-500/10"
+            iconColor="text-blue-400"
             title="CPU"
             subtitle="Processor"
             items={[
@@ -166,8 +166,8 @@ function Home() {
 
           <InfoCard
             icon={Gpu}
-            iconBgColor="bg-purple-500/10"
-            iconColor="text-purple-400"
+            iconBgColor="bg-blue-500/10"
+            iconColor="text-blue-400"
             title="GPU"
             subtitle="Graphics"
             items={
@@ -185,8 +185,8 @@ function Home() {
 
           <InfoCard
             icon={MemoryStick}
-            iconBgColor="bg-purple-500/10"
-            iconColor="text-purple-400"
+            iconBgColor="bg-blue-500/10"
+            iconColor="text-blue-400"
             title="Memory"
             subtitle="RAM"
             items={[
@@ -197,8 +197,8 @@ function Home() {
 
           <InfoCard
             icon={MonitorCog}
-            iconBgColor="bg-purple-500/10"
-            iconColor="text-purple-400"
+            iconBgColor="bg-blue-500/10"
+            iconColor="text-blue-400"
             title="System"
             subtitle="Operating System"
             items={[
@@ -209,8 +209,8 @@ function Home() {
 
           <InfoCard
             icon={HardDrive}
-            iconBgColor="bg-purple-500/10"
-            iconColor="text-purple-400"
+            iconBgColor="bg-blue-500/10"
+            iconColor="text-blue-400"
             title="Storage"
             subtitle="Disk"
             items={[
@@ -221,8 +221,8 @@ function Home() {
 
           <InfoCard
             icon={Wrench}
-            iconBgColor="bg-purple-500/10"
-            iconColor="text-purple-400"
+            iconBgColor="bg-blue-500/10"
+            iconColor="text-blue-400"
             title="Tweaks"
             subtitle="Optimization"
             items={[
@@ -233,10 +233,10 @@ function Home() {
         </div>
 
         <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
           <Card className="relative bg-void-card/80 backdrop-blur-xl rounded-2xl border border-void-border p-8 flex flex-col md:flex-row gap-8 items-center justify-between">
             <div className="flex gap-6 items-center">
-              <div className="p-4 bg-void-primary/10 rounded-2xl shadow-inner shadow-purple-500/10">
+              <div className="p-4 bg-void-primary/10 rounded-2xl shadow-inner shadow-blue-500/10">
                 <Zap className="text-void-primary" size={40} />
               </div>
               <div className="space-y-1">
@@ -249,7 +249,7 @@ function Home() {
             <Button 
               variant="primary" 
               size="lg" 
-              className="px-10 h-14 text-lg font-bold transition-all shadow-2xl shadow-purple-600/20" 
+              className="px-10 h-14 text-lg font-bold transition-all shadow-2xl shadow-blue-600/20" 
               onClick={goToTweaks}
             >
               Get Started <Zap size={20} className="ml-2 fill-current" />

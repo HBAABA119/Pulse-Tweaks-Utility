@@ -256,6 +256,9 @@ export const setupTweaksHandlers = (): void => {
 
 const getActiveTweaks = (): Record<string, boolean> | {} => {
   try {
+    if (!fsSync.existsSync(tweaksStatePath)) {
+      return {}
+    }
     const data = fsSync.readFileSync(tweaksStatePath, "utf8")
     const parsed = JSON.parse(data)
     return Object.keys(parsed).filter((key) => parsed[key])

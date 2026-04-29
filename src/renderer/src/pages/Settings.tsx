@@ -43,7 +43,7 @@ function Settings() {
     await invoke({ channel: "clear-void-cache" })
     localStorage.removeItem("void:systemInfo")
     localStorage.removeItem("void:tweakInfo")
-    toast.success("Void Optimizer cache cleared successfully!")
+    toast.success("Pulse Tweaks Utility cache cleared successfully!")
   }
 
   const handleToggleTray = async () => {
@@ -80,7 +80,7 @@ function Settings() {
               </p>
               <ul className="list-disc list-inside text-sm space-y-1 ml-2">
                 <li><span className="text-void-text font-medium">Original Developers:</span> The team at Parcoil.</li>
-                <li><span className="text-void-text font-medium">Source Inspiration:</span> We've integrated several of their core concepts and UI elements, applying custom modifications to align with the Void Esports ecosystem.</li>
+                <li><span className="text-void-text font-medium">Source Inspiration:</span> We've integrated several of their core concepts and UI elements, applying custom modifications to align with the Pulse Tweaks ecosystem.</li>
               </ul>
             </section>
 
@@ -90,8 +90,8 @@ function Settings() {
                 The transition from a base framework to the current Verve application involved significant refinement and internal collaboration:
               </p>
               <ul className="list-disc list-inside text-sm space-y-1 ml-2">
-                <li><span className="text-void-text font-medium">Lead Developer:</span> Alex (CTO, Void Esports)</li>
-                <li><span className="text-void-text font-medium">Special Thanks:</span> Void Nicholas, for providing the essential support and resources needed to bring this vision to life.</li>
+                <li><span className="text-void-text font-medium">Lead Developer:</span> Alex (CTO, Pulse Team)</li>
+                <li><span className="text-void-text font-medium">Special Thanks:</span> Pulse Nicholas, for providing the essential support and resources needed to bring this vision to life.</li>
               </ul>
             </section>
 
@@ -132,7 +132,7 @@ function Settings() {
               Are you sure you want to delete all legacy registry backups? This will permanently
               remove the{" "}
               <code className="bg-void-border-secondary/20 px-1 py-0.5 rounded-sm text-xs">
-                C:\VoidOptimizer\Backup
+                C:\PulseTweaks\Backup
               </code>{" "}
               folder and all its contents.
             </p>
@@ -228,7 +228,7 @@ function Settings() {
                     <p className="text-sm text-void-text-secondary">
                       Remove old backup files stored in{" "}
                       <code className="bg-void-border-secondary/20 px-1 py-0.5 rounded-sm text-xs">
-                        C:\VoidOptimizer\Backup
+                        C:\PulseTweaks\Backup
                       </code>
                     </p>
                   </div>
@@ -242,7 +242,7 @@ function Settings() {
                       Clear Cache
                     </h3>
                     <p className="text-sm text-void-text-secondary">
-                      Remove temporary files/logs Void Optimizer may leave behind.
+                      Remove temporary files/logs Pulse Tweaks Utility may leave behind.
                     </p>
                   </div>
                   <Button variant="secondary" onClick={clearCache}>
@@ -267,7 +267,7 @@ function Settings() {
                   <div className="flex-1">
                     <h3 className="text-base font-medium text-void-text mb-1">Show tray icon</h3>
                     <p className="text-sm text-void-text-secondary">
-                      Enable or disable Void Optimizer running in the system tray.
+                      Enable or disable Pulse Tweaks Utility running in the system tray.
                       <span className="inline-flex items-center gap-1 ml-2 text-yellow-500">
                         <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full"></span>
                         Requires restart
@@ -316,7 +316,7 @@ function Settings() {
               <SettingCard>
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="text-base font-medium text-void-text mb-1">Void Optimizer</h3>
+                    <h3 className="text-base font-medium text-void-text mb-1">Pulse Tweaks Utility</h3>
                     <p className="text-sm text-void-text-secondary">
                       Version {jsonData.version}
                     </p>
@@ -327,7 +327,7 @@ function Settings() {
                     </Button>
                     <div className="text-right">
                       <p className="text-sm text-void-text-secondary">
-                        © {new Date().getFullYear()} Void Team
+                        © {new Date().getFullYear()} Pulse Team
                       </p>
                     </div>
                   </div>

@@ -13,7 +13,7 @@
     Some vendor software may not run at startup.
 
 !!! note 
-    This tweak was added in V1, Void Optimizer V1+ is required.
+    This tweak was added in V1, Pulse Tweaks Utility V1+ is required.
   
 ## Details
 

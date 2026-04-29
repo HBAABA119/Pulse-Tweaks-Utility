@@ -867,7 +867,7 @@ function parseInline(text: string): JSX.Element {
     if (codeMatch) {
       if (codeMatch[1]) parts.push(codeMatch[1])
       parts.push(
-        <code key={key++} className="bg-void-bg px-1.5 py-0.5 rounded text-xs font-mono text-void-primary">
+        <code key={key++} className="bg-void-card/50 px-1.5 py-0.5 rounded text-xs font-mono text-void-primary">
           {codeMatch[2]}
         </code>
       )
