@@ -26,24 +26,24 @@ const pageNames: Record<string, string> = {
 async function connect(): Promise<void> {
   if (rpc) return
 
-  rpc = new Client({ transport: "ipc" })
-
-  rpc.on("ready", () => {
-    console.log("[Discord RPC]: Connected")
-    isConnected = true
-    updateActivity()
-  })
-
-  rpc.on("disconnected", () => {
-    console.log("[Discord RPC]: Disconnected")
-    isConnected = false
-    rpc = null
-  })
-
   try {
+    rpc = new Client({ transport: "ipc" })
+
+    rpc.on("ready", () => {
+      console.log("[Discord RPC]: Connected")
+      isConnected = true
+      updateActivity()
+    })
+
+    rpc.on("disconnected", () => {
+      console.log("[Discord RPC]: Disconnected")
+      isConnected = false
+      rpc = null
+    })
+
     await rpc.login({ clientId: CLIENT_ID })
   } catch (error) {
-    // console.error("[Discord RPC]: Failed to connect", error)
+    console.error("[Discord RPC]: Failed to connect:", error)
     rpc = null
     isConnected = false
     // Retry in 15 seconds if failed
@@ -76,12 +76,14 @@ function updateActivity(): void {
 
   // Add buttons
   activity.buttons = [
-    { label: "Join the Discord Server", url: "https://discord.gg/D9HJAyZcTp" },
+    { label: "Join Discord Server", url: "https://discord.gg/D9HJAyZcTp" },
   ]
 
-  rpc.setActivity(activity).catch((err) => {
-    console.error("[Discord RPC]: Failed to set activity", err)
-  })
+  if (rpc && rpc.setActivity) {
+    rpc.setActivity(activity).catch((err) => {
+      console.error("[Discord RPC]: Failed to set activity", err)
+    })
+  }
 }
 
 export function setPage(page: string): void {

@@ -1,5 +1,5 @@
 {
-  "version": "2026-04-12T09:16:33.804Z",
+  "version": "2026-05-06T09:19:33.291Z",
   "tweaks": [
     {
       "id": "24-hour-clock",
@@ -110,7 +110,7 @@
     {
       "id": "debloat-windows",
       "title": "Debloat Windows",
-      "description": "Choose between Void Debloat script or Raphire's Win11Debloat script to remove built-in Windows apps and bloatware.",
+      "description": "Choose between Pulse Tweaks Debloat script or Raphire's Win11Debloat script to remove built-in Windows apps and bloatware.",
       "category": [
         "Performance",
         "Privacy"
@@ -171,6 +171,23 @@
       "scripts": {
         "apply": "# Disable Advertising ID\r\n# Disables Windows advertising ID for better privacy.\r\n\r\ntry {\r\n    S\r\n    Write-Host \"Disable Advertising ID Applied successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to apply Disable Advertising ID: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n",
         "unapply": "# Disable Advertising ID\r\n# Reverts changes made by Disable Advertising ID\r\n\r\ntry {\r\n    S\r\n    Write-Host \"Disable Advertising ID Restored successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to restore Disable Advertising ID: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n"
+      }
+    },
+    {
+      "id": "disable-aero-shake",
+      "title": "Disable Aero Shake",
+      "description": "Prevents windows from minimizing when you shake them.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-aero-shake",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-aero-shake/meta.json",
+      "scripts": {
+        "apply": "# Disable Aero Shake\n# Prevents windows from minimizing when shaken.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"DisallowShaking\" -Value 1 -Type DWord\n    Write-Host \"Disable Aero Shake applied successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error applying Disable Aero Shake: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Aero Shake\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"DisallowShaking\" -Value 0 -Type DWord\n    Write-Host \"Disable Aero Shake reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Disable Aero Shake: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
       }
     },
     {
@@ -1289,6 +1306,23 @@
       }
     },
     {
+      "id": "disable-filter-keys",
+      "title": "Disable Filter Keys",
+      "description": "Disables Filter Keys accessibility feature.",
+      "category": [
+        "General",
+        "Accessibility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-filter-keys",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-filter-keys/meta.json",
+      "scripts": {
+        "apply": "# Disable Filter Keys\n# Disables Filter Keys accessibility feature.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Accessibility\\Keyboard Response\" -Name \"Flags\" -Value \"122\" -Type String\n    Write-Host \"Filter Keys disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling Filter Keys: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Filter Keys\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Accessibility\\Keyboard Response\" -Name \"Flags\" -Value \"126\" -Type String\n    Write-Host \"Filter Keys reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Filter Keys: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
       "id": "disable-firewall",
       "title": "Disable Firewall",
       "description": "Disables Windows Firewall.",
@@ -1522,6 +1556,23 @@
       }
     },
     {
+      "id": "disable-logon-background",
+      "title": "Disable Logon Background Image",
+      "description": "Disables the background image on the Windows logon screen for faster login.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-logon-background",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-logon-background/meta.json",
+      "scripts": {
+        "apply": "# Disable Logon Background Image\n# Disables the background image on the Windows logon screen.\n\ntry {\n    Set-ItemProperty -Path \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System\" -Name \"DisableLogonBackgroundImage\" -Value 1 -Type DWord\n    Write-Host \"Logon background image disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling logon background: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Logon Background Image\n# Reverts changes made by the apply script\n\ntry {\n    Remove-ItemProperty -Path \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System\" -Name \"DisableLogonBackgroundImage\" -ErrorAction SilentlyContinue\n    Write-Host \"Logon background image reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting logon background: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
       "id": "disable-maps",
       "title": "Disable Maps",
       "description": "Removes Windows Maps app.",
@@ -1622,6 +1673,23 @@
       }
     },
     {
+      "id": "disable-mouse-shadow",
+      "title": "Disable Mouse Pointer Shadow",
+      "description": "Disables the shadow effect under the mouse cursor for better performance.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-mouse-shadow",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-mouse-shadow/meta.json",
+      "scripts": {
+        "apply": "# Disable Mouse Pointer Shadow\n# Disables the shadow effect under the mouse cursor.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Cursors\" -Name \"CursorShadow\" -Value 0 -Type DWord\n    Write-Host \"Mouse pointer shadow disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling mouse shadow: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Mouse Pointer Shadow\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Cursors\" -Name \"CursorShadow\" -Value 1 -Type DWord\n    Write-Host \"Mouse pointer shadow reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting mouse shadow: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
       "id": "disable-mpo",
       "title": "Disable MPO",
       "description": "Disables Multi-Plane Overlay to fix flickering and stuttering on some GPUs.",
@@ -1636,6 +1704,23 @@
       "scripts": {
         "apply": "# Disable MPO\r\n# Disables Multi-Plane Overlay to fix flickering and stuttering on some GPUs\r\n\r\n# Disable MPO via registry\r\nSet-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\Dwm\" -Name \"OverlayTestMode\" -Value 5 -Type DWORD -Force\r\n\r\n# Disable MPO for better compatibility\r\nSet-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\Dwm\" -Name \"EnableMPO\" -Value 0 -Type DWORD -Force\r\n\r\n# Configure graphics settings for better performance\r\nSet-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\" -Name \"MPOEnable\" -Value 0 -Type DWORD -Force\r\nSet-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\" -Name \"MPODriverEnable\" -Value 0 -Type DWORD -Force\r\n\r\n# Disable hardware acceleration for MPO\r\nSet-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\" -Name \"HardwareMPOEnable\" -Value 0 -Type DWORD -Force\r\n\r\nWrite-Host \"Multi-Plane Overlay (MPO) disabled for better GPU compatibility.\"",
         "unapply": "# Enable MPO\r\n# Re-enables Multi-Plane Overlay that was previously disabled\r\n\r\n# Enable MPO via registry\r\nSet-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\Dwm\" -Name \"EnableMPO\" -Value 1 -Type DWORD -Force\r\n\r\n# Restore graphics settings to default\r\nRemove-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\" -Name \"MPOEnable\" -ErrorAction SilentlyContinue\r\nRemove-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\" -Name \"MPODriverEnable\" -ErrorAction SilentlyContinue\r\n\r\n# Restore hardware acceleration for MPO\r\nRemove-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\" -Name \"HardwareMPOEnable\" -ErrorAction SilentlyContinue\r\n\r\nWrite-Host \"Multi-Plane Overlay (MPO) restored to default.\""
+      }
+    },
+    {
+      "id": "disable-network-discovery",
+      "title": "Disable Network Discovery",
+      "description": "Disables network discovery to hide your PC on the network.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-network-discovery",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-network-discovery/meta.json",
+      "scripts": {
+        "apply": "# Disable Network Discovery\n# Disables network discovery to hide your PC on the network.\n\ntry {\n    $services = @(\"fdrespub\", \"ssdpdisc\", \"upnphost\", \"dnscache\")\n    foreach ($service in $services) {\n        Set-Service -Name $service -StartupType Disabled -ErrorAction SilentlyContinue\n        Stop-Service -Name $service -Force -ErrorAction SilentlyContinue\n    }\n    Write-Host \"Network Discovery disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling Network Discovery: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Network Discovery\n# Reverts changes made by the apply script\n\ntry {\n    $services = @(\"fdrespub\", \"ssdpdisc\", \"upnphost\", \"dnscache\")\n    foreach ($service in $services) {\n        Set-Service -Name $service -StartupType Automatic -ErrorAction SilentlyContinue\n        Start-Service -Name $service -ErrorAction SilentlyContinue\n    }\n    Write-Host \"Network Discovery reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Network Discovery: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
       }
     },
     {
@@ -1722,6 +1807,23 @@
       }
     },
     {
+      "id": "disable-quick-access",
+      "title": "Disable Quick Access",
+      "description": "Disables Quick Access in File Explorer, opens to This PC instead.",
+      "category": [
+        "General",
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-quick-access",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-quick-access/meta.json",
+      "scripts": {
+        "apply": "# Disable Quick Access\n# Disables Quick Access in File Explorer, opens to This PC instead.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"LaunchTo\" -Value 1 -Type DWord\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"Quick Access disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling Quick Access: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Quick Access\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"LaunchTo\" -Value 2 -Type DWord\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"Quick Access reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Quick Access: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
       "id": "disable-windows-recall",
       "title": "Disable Windows Recall",
       "description": "Disables the Windows Recall feature for better privacy.",
@@ -1736,6 +1838,40 @@
       "scripts": {
         "apply": "New-Item -Path \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsAI\" -Force\nSet-ItemProperty -Path \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsAI\" -Name \"AllowRecallEnablement\" -Type DWord -Value 0\n\nStart-Process \"powershell.exe\" -ArgumentList \"-NoProfile -ExecutionPolicy Bypass -Command `\"Write-Host 'Disabling Windows Recall...' -ForegroundColor Cyan; Write-Host 'This may take a while depending on your internet connection. Please wait...' -ForegroundColor Yellow; try { DISM /Online /Disable-Feature /FeatureName:Recall /NoRestart; Write-Host 'Windows Recall has been disabled successfully.' -ForegroundColor Green } catch { Write-Host 'Failed to disable Windows Recall.' -ForegroundColor Red }; Write-Host 'Press any key to close...'; $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')`\"\" -WindowStyle Normal",
         "unapply": "# Disable Windows Recall\r\n# Reverts changes made by Disable Windows Recall\r\n\r\ntry {\r\n    Remove-Item -Path \"HKLM:SOFTWAREPoliciesMicrosoftWindowsWindowsAI\" -Recurse -Force\n\nStart-Process \"powershell.exe\" -ArgumentList \"-NoProfile -ExecutionPolicy Bypass -Command `\"Write-Host 'Re-enabling Windows Recall...' -ForegroundColor Cyan\r\n    Write-Host 'This may take a while depending on your internet connection. Please wait...' -ForegroundColor Yellow\r\n    try { DISM /Online /Enable-Feature /FeatureName:Recall /NoRestart\r\n    Write-Host 'Windows Recall has been re-enabled successfully.' -ForegroundColor Green } catch { Write-Host 'Failed to re-enable Windows Recall.' -ForegroundColor Red }\r\n    Write-Host 'Press any key to close...'\r\n    $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')`\"\" -WindowStyle Normal\r\n    Write-Host \"Disable Windows Recall Restored successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to restore Disable Windows Recall: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n"
+      }
+    },
+    {
+      "id": "disable-recent-files",
+      "title": "Disable Recent Files",
+      "description": "Disables recent files and folders in File Explorer.",
+      "category": [
+        "Privacy",
+        "General"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-recent-files",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-recent-files/meta.json",
+      "scripts": {
+        "apply": "# Disable Recent Files\n# Disables recent files and folders in File Explorer.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\" -Name \"ShowRecent\" -Value 0 -Type DWord\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\" -Name \"ShowFrequent\" -Value 0 -Type DWord\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"Recent files disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling recent files: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Recent Files\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\" -Name \"ShowRecent\" -Value 1 -Type DWord\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\" -Name \"ShowFrequent\" -Value 1 -Type DWord\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"Recent files reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting recent files: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
+      "id": "disable-remote-assistance",
+      "title": "Disable Remote Assistance",
+      "description": "Disables Windows Remote Assistance feature for security.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-remote-assistance",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-remote-assistance/meta.json",
+      "scripts": {
+        "apply": "# Disable Remote Assistance\n# Disables Windows Remote Assistance feature.\n\ntry {\n    Set-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Remote Assistance\" -Name \"fAllowToGetHelp\" -Value 0 -Type DWord\n    Set-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Remote Assistance\" -Name \"fAllowFullControl\" -Value 0 -Type DWord\n    Write-Host \"Remote Assistance disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling Remote Assistance: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Remote Assistance\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Remote Assistance\" -Name \"fAllowToGetHelp\" -Value 1 -Type DWord\n    Set-ItemProperty -Path \"HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Remote Assistance\" -Name \"fAllowFullControl\" -Value 1 -Type DWord\n    Write-Host \"Remote Assistance reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Remote Assistance: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
       }
     },
     {
@@ -1785,6 +1921,40 @@
       "scripts": {
         "apply": "# Disable Search Indexing\r\n# Disables Windows Search Indexing for better SSD performance and lower resource usage.\r\n\r\ntry {\r\n    Set-Service -Name WSearch -StartupType Disabled -Force\r\n    Stop-Service -Name WSearch -Force\r\n    Write-Host \"Disable Search Indexing Applied successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to apply Disable Search Indexing: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n",
         "unapply": "# Disable Search Indexing\r\n# Reverts changes made by Disable Search Indexing\r\n\r\ntry {\r\n    Set-Service -Name WSearch -StartupType Automatic -Force\r\n    Start-Service -Name WSearch -Force\r\n    Write-Host \"Disable Search Indexing Restored successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to restore Disable Search Indexing: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n"
+      }
+    },
+    {
+      "id": "disable-shortcut-arrow",
+      "title": "Remove Shortcut Arrows",
+      "description": "Removes the arrow overlay from shortcut icons on the desktop.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-shortcut-arrow",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-shortcut-arrow/meta.json",
+      "scripts": {
+        "apply": "# Remove Shortcut Arrows\n# Removes the arrow overlay from shortcut icons.\n\ntry {\n    Set-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Icons\" -Name \"29\" -Value \"%SystemRoot%\\System32\\shell32.dll,-50\" -Type String\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"Shortcut arrows removed successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error removing shortcut arrows: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Remove Shortcut Arrows\n# Reverts changes made by the apply script\n\ntry {\n    Remove-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Icons\" -Name \"29\" -ErrorAction SilentlyContinue\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"Shortcut arrows restored successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error restoring shortcut arrows: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
+      "id": "disable-shutdown-tracker",
+      "title": "Disable Shutdown Event Tracker",
+      "description": "Disables the shutdown event tracker dialog on Windows shutdown.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-shutdown-tracker",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-shutdown-tracker/meta.json",
+      "scripts": {
+        "apply": "# Disable Shutdown Event Tracker\n# Disables the shutdown event tracker dialog.\n\ntry {\n    Set-ItemProperty -Path \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Reliability\" -Name \"ShutdownReasonOn\" -Value 0 -Type DWord\n    Set-ItemProperty -Path \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Reliability\" -Name \"ShutdownReasonUI\" -Value 0 -Type DWord\n    Write-Host \"Shutdown event tracker disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling shutdown tracker: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Shutdown Event Tracker\n# Reverts changes made by the apply script\n\ntry {\n    Remove-ItemProperty -Path \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Reliability\" -Name \"ShutdownReasonOn\" -ErrorAction SilentlyContinue\n    Remove-ItemProperty -Path \"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Reliability\" -Name \"ShutdownReasonUI\" -ErrorAction SilentlyContinue\n    Write-Host \"Shutdown event tracker reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting shutdown tracker: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
       }
     },
     {
@@ -1854,6 +2024,40 @@
       }
     },
     {
+      "id": "disable-snap-assist",
+      "title": "Disable Snap Assist",
+      "description": "Disables the Snap Assist feature when snapping windows.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-snap-assist",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-snap-assist/meta.json",
+      "scripts": {
+        "apply": "# Disable Snap Assist\n# Disables the Snap Assist feature when snapping windows.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"SnapAssist\" -Value 0 -Type DWord\n    Write-Host \"Snap Assist disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling Snap Assist: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Snap Assist\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"SnapAssist\" -Value 1 -Type DWord\n    Write-Host \"Snap Assist reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Snap Assist: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
+      "id": "disable-snap-fill",
+      "title": "Disable Snap Fill",
+      "description": "Disables automatic window resizing when dragging to screen edges.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-snap-fill",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-snap-fill/meta.json",
+      "scripts": {
+        "apply": "# Disable Snap Fill\n# Disables automatic window resizing when dragging to screen edges.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"DockMoving\" -Value 0 -Type DWord\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"SnapSizing\" -Value 0 -Type DWord\n    Write-Host \"Snap Fill disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling Snap Fill: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Snap Fill\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"DockMoving\" -Value 1 -Type DWord\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"SnapSizing\" -Value 1 -Type DWord\n    Write-Host \"Snap Fill reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Snap Fill: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
       "id": "disable-sports",
       "title": "Disable Sports",
       "description": "Removes Sports app.",
@@ -1884,6 +2088,23 @@
       "scripts": {
         "apply": "# Disable Startup Apps\r\n# Disables all startup applications for faster boot times.\r\n\r\ntry {\r\n    G\r\n    Write-Host \"Disable Startup Apps Applied successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to apply Disable Startup Apps: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n",
         "unapply": "# Disable Startup Apps\r\n# Reverts changes made by Disable Startup Apps\r\n\r\ntry {\r\n    G\r\n    Write-Host \"Disable Startup Apps Restored successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to restore Disable Startup Apps: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n"
+      }
+    },
+    {
+      "id": "disable-sticky-keys",
+      "title": "Disable Sticky Keys Popup",
+      "description": "Disables the Sticky Keys popup when pressing Shift 5 times.",
+      "category": [
+        "General",
+        "Accessibility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-sticky-keys",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-sticky-keys/meta.json",
+      "scripts": {
+        "apply": "# Disable Sticky Keys Popup\n# Disables the Sticky Keys popup when pressing Shift 5 times.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Accessibility\\StickyKeys\" -Name \"Flags\" -Value \"506\" -Type String\n    Write-Host \"Sticky Keys popup disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling Sticky Keys: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Sticky Keys Popup\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Accessibility\\StickyKeys\" -Name \"Flags\" -Value \"510\" -Type String\n    Write-Host \"Sticky Keys popup reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Sticky Keys: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
       }
     },
     {
@@ -1999,6 +2220,23 @@
       "scripts": {
         "apply": "# Disable Tips and Tricks\r\n# Disables Windows tips and tricks notifications.\r\n\r\ntry {\r\n    Set-ItemProperty -Path \"HKCU:\\SoftwareMicrosoftWindowsCurrentVersion\\ContentDeliveryManager\" -Name \"SubscribedContent-338387Enabled\" -Value 0 -Type DWord\r\n    Set-ItemProperty -Path \"HKCU:\\SoftwareMicrosoftWindowsCurrentVersion\\ContentDeliveryManager\" -Name \"RotatingLockScreenOverlayEnabled\" -Value 0 -Type DWord\r\n    Write-Host \"Disable Tips and Tricks Applied successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to apply Disable Tips and Tricks: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n",
         "unapply": "# Disable Tips and Tricks\r\n# Reverts changes made by Disable Tips and Tricks\r\n\r\ntry {\r\n    Set-ItemProperty -Path \"HKCU:\\SoftwareMicrosoftWindowsCurrentVersion\\ContentDeliveryManager\" -Name \"SubscribedContent-338387Enabled\" -Value 1 -Type DWord\r\n    Set-ItemProperty -Path \"HKCU:\\SoftwareMicrosoftWindowsCurrentVersion\\ContentDeliveryManager\" -Name \"RotatingLockScreenOverlayEnabled\" -Value 1 -Type DWord\r\n    Write-Host \"Disable Tips and Tricks Restored successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to restore Disable Tips and Tricks: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n"
+      }
+    },
+    {
+      "id": "disable-toggle-keys",
+      "title": "Disable Toggle Keys",
+      "description": "Disables Toggle Keys beep when pressing Caps Lock.",
+      "category": [
+        "General",
+        "Accessibility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-toggle-keys",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-toggle-keys/meta.json",
+      "scripts": {
+        "apply": "# Disable Toggle Keys\n# Disables Toggle Keys beep when pressing Caps Lock.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Accessibility\\ToggleKeys\" -Name \"Flags\" -Value \"58\" -Type String\n    Write-Host \"Toggle Keys disabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error disabling Toggle Keys: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Disable Toggle Keys\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Accessibility\\ToggleKeys\" -Name \"Flags\" -Value \"62\" -Type String\n    Write-Host \"Toggle Keys reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Toggle Keys: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
       }
     },
     {
@@ -2365,6 +2603,22 @@
       }
     },
     {
+      "id": "enable-admin-approval",
+      "title": "Enable Admin Approval Mode",
+      "description": "Ensures Admin Approval Mode is enabled for UAC prompts.",
+      "category": [
+        "Security"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-admin-approval",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-admin-approval/meta.json",
+      "scripts": {
+        "apply": "# Enable Admin Approval Mode\n# Ensures Admin Approval Mode is enabled for UAC.\n\ntry {\n    Set-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" -Name \"EnableLUA\" -Value 1 -Type DWord\n    Set-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" -Name \"ConsentPromptBehaviorAdmin\" -Value 2 -Type DWord\n    Write-Host \"Admin Approval Mode enabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error enabling Admin Approval: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Enable Admin Approval Mode\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" -Name \"ConsentPromptBehaviorAdmin\" -Value 5 -Type DWord\n    Write-Host \"Admin Approval Mode reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting Admin Approval: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
       "id": "enable-balanced",
       "title": "Enable Balanced Power",
       "description": "Sets power plan to Balanced mode.",
@@ -2378,6 +2632,40 @@
       "scripts": {
         "apply": "# Enable Balanced Power\r\n# Sets power plan to Balanced mode.\r\n\r\ntry {\r\n    p\r\n    Write-Host \"Enable Balanced Power Applied successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to apply Enable Balanced Power: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n",
         "unapply": "# Enable Balanced Power\r\n# Reverts changes made by Enable Balanced Power\r\n\r\ntry {\r\n    p\r\n    Write-Host \"Enable Balanced Power Restored successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to restore Enable Balanced Power: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n"
+      }
+    },
+    {
+      "id": "enable-clear-clipboard",
+      "title": "Clear Clipboard on Exit",
+      "description": "Automatically clears clipboard when exiting Windows.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-clear-clipboard",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-clear-clipboard/meta.json",
+      "scripts": {
+        "apply": "# Clear Clipboard on Exit\n# Automatically clears clipboard when exiting Windows.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"ClearClipboardOnExit\" -Value 1 -Type DWord\n    Write-Host \"Clear clipboard on exit enabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error enabling clear clipboard: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Clear Clipboard on Exit\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"ClearClipboardOnExit\" -Value 0 -Type DWord\n    Write-Host \"Clear clipboard on exit reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting clear clipboard: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
+      "id": "enable-compressed-files-color",
+      "title": "Colorize Compressed Files",
+      "description": "Shows compressed files and folders in blue color in File Explorer.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-compressed-files-color",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-compressed-files-color/meta.json",
+      "scripts": {
+        "apply": "# Colorize Compressed Files\n# Shows compressed files in blue color in File Explorer.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"ShowCompColor\" -Value 1 -Type DWord\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"Compressed files color enabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error enabling compressed files color: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Colorize Compressed Files\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"ShowCompColor\" -Value 0 -Type DWord\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"Compressed files color reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting compressed files color: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
       }
     },
     {
@@ -2414,6 +2702,23 @@
       }
     },
     {
+      "id": "enable-file-extensions",
+      "title": "Show File Extensions",
+      "description": "Always show file extensions in File Explorer.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-file-extensions",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-file-extensions/meta.json",
+      "scripts": {
+        "apply": "# Show File Extensions\n# Always show file extensions in File Explorer.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"HideFileExt\" -Value 0 -Type DWord\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"File extensions shown successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error showing file extensions: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Show File Extensions\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" -Name \"HideFileExt\" -Value 1 -Type DWord\n    Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue\n    Write-Host \"File extensions hidden successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error hiding file extensions: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
       "id": "enable-game-mode",
       "title": "Enable Game Mode",
       "description": "Enables Windows Game Mode for better gaming performance.",
@@ -2428,6 +2733,23 @@
       "scripts": {
         "apply": "# Enable Game Mode\r\n# Enables Game Mode on windows\r\n\r\nSet-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\GameBar\" -Name \"AllowAutoGameMode\" -Value 1\r\nSet-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\GameBar\" -Name \"AutoGameModeEnabled\" -Value 1\r\n\r\nWrite-Output \"Game Mode is now ENABLED.\"\r\n",
         "unapply": "# Enable Game Mode\r\n# Reverts changes made by the apply script\r\n\r\nSet-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\GameBar\" -Name \"AllowAutoGameMode\" -Value 0\r\nSet-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\GameBar\" -Name \"AutoGameModeEnabled\" -Value 0\r\n\r\nWrite-Output \"Game Mode is now DISABLED.\"\r\n"
+      }
+    },
+    {
+      "id": "enable-god-mode",
+      "title": "Enable God Mode",
+      "description": "Creates a God Mode folder with all Windows settings.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-god-mode",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-god-mode/meta.json",
+      "scripts": {
+        "apply": "# Enable God Mode\n# Creates a God Mode folder with all Windows settings.\n\ntry {\n    $desktop = [Environment]::GetFolderPath(\"Desktop\")\n    $godModePath = Join-Path $desktop \"GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}\"\n    if (!(Test-Path $godModePath)) {\n        New-Item -ItemType Directory -Path $godModePath | Out-Null\n        Write-Host \"God Mode folder created on Desktop successfully.\" -ForegroundColor Green\n    } else {\n        Write-Host \"God Mode folder already exists.\" -ForegroundColor Yellow\n    }\n} catch {\n    Write-Host \"Error creating God Mode: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Enable God Mode\n# Removes the God Mode folder\n\ntry {\n    $desktop = [Environment]::GetFolderPath(\"Desktop\")\n    $godModePath = Join-Path $desktop \"GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}\"\n    if (Test-Path $godModePath) {\n        Remove-Item -Path $godModePath -Recurse -Force\n        Write-Host \"God Mode folder removed successfully.\" -ForegroundColor Green\n    } else {\n        Write-Host \"God Mode folder not found.\" -ForegroundColor Yellow\n    }\n} catch {\n    Write-Host \"Error removing God Mode: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
       }
     },
     {
@@ -2514,6 +2836,23 @@
       }
     },
     {
+      "id": "enable-numlock-startup",
+      "title": "Enable NumLock on Startup",
+      "description": "Ensures NumLock is turned on when Windows starts.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-numlock-startup",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-numlock-startup/meta.json",
+      "scripts": {
+        "apply": "# Enable NumLock on Startup\n# Ensures NumLock is turned on when Windows starts.\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Keyboard\" -Name \"InitialKeyboardIndicators\" -Value \"2\" -Type String\n    Set-ItemProperty -Path \"HKU:\\.DEFAULT\\Control Panel\\Keyboard\" -Name \"InitialKeyboardIndicators\" -Value \"2\" -Type String\n    Write-Host \"NumLock on startup enabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error enabling NumLock on startup: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Enable NumLock on Startup\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKCU:\\Control Panel\\Keyboard\" -Name \"InitialKeyboardIndicators\" -Value \"0\" -Type String\n    Set-ItemProperty -Path \"HKU:\\.DEFAULT\\Control Panel\\Keyboard\" -Name \"InitialKeyboardIndicators\" -Value \"0\" -Type String\n    Write-Host \"NumLock on startup reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting NumLock on startup: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
+      }
+    },
+    {
       "id": "enable-optimization-for-windowed-games",
       "title": "Enable Optimization For Windowed Games",
       "description": "Enables Optimization For Windowed Games on windows",
@@ -2561,6 +2900,23 @@
       "scripts": {
         "apply": "# Enable Taskbar Auto-Hide\r\n# Enables taskbar auto-hide for more screen space.\r\n\r\ntry {\r\n    S\r\n    Write-Host \"Enable Taskbar Auto-Hide Applied successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to apply Enable Taskbar Auto-Hide: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n",
         "unapply": "# Enable Taskbar Auto-Hide\r\n# Reverts changes made by Enable Taskbar Auto-Hide\r\n\r\ntry {\r\n    S\r\n    Write-Host \"Enable Taskbar Auto-Hide Restored successfully.\" -ForegroundColor Green\r\n} catch {\r\n    Write-Host \"Error trying to restore Enable Taskbar Auto-Hide: $($_.Exception.Message)\" -ForegroundColor Red\r\n}\r\n\r\n"
+      }
+    },
+    {
+      "id": "enable-verbose-status",
+      "title": "Enable Verbose Startup/Shutdown",
+      "description": "Shows detailed information during Windows startup and shutdown.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-verbose-status",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-verbose-status/meta.json",
+      "scripts": {
+        "apply": "# Enable Verbose Startup/Shutdown\n# Shows detailed information during Windows startup and shutdown.\n\ntry {\n    Set-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" -Name \"VerboseStatus\" -Value 1 -Type DWord\n    Write-Host \"Verbose status messages enabled successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error enabling verbose status: $($_.Exception.Message)\" -ForegroundColor Red\n}\n",
+        "unapply": "# Enable Verbose Startup/Shutdown\n# Reverts changes made by the apply script\n\ntry {\n    Set-ItemProperty -Path \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" -Name \"VerboseStatus\" -Value 0 -Type DWord\n    Write-Host \"Verbose status messages reverted successfully.\" -ForegroundColor Green\n} catch {\n    Write-Host \"Error reverting verbose status: $($_.Exception.Message)\" -ForegroundColor Red\n}\n"
       }
     },
     {

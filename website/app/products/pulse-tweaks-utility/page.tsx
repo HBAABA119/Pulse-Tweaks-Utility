@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { InteractiveDisplay } from "@/components/InteractiveDisplay";
+import { LivePreview } from "@/components/LivePreview";
 import { Zap, Shield, Rocket, Terminal, Laptop, Cpu, Gauge, ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -82,20 +84,28 @@ export default function PulseTweaksUtilityPage() {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="relative aspect-video rounded-3xl overflow-hidden border border-void-border bg-black shadow-2xl group"
+          className="relative"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-void-primary/20 to-black group-hover:from-void-primary/30 transition-colors" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <Image src="/hero-logo.png" alt="App Preview" width={300} height={300} className="opacity-40" />
-          </div>
-          <div className="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl border-void-border/50">
-             <div className="flex items-center justify-between">
-                <span className="text-white font-bold tracking-wider uppercase text-xs">Desktop Application Interface</span>
-                <span className="text-void-primary text-xs font-bold">LIVE PREVIEW</span>
-             </div>
-          </div>
+          <LivePreview />
         </motion.div>
       </section>
+
+      {/* Interactive Display Section */}
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        className="flex flex-col gap-8"
+      >
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">Interactive Display</h2>
+          <p className="text-void-text-muted text-lg max-w-2xl mx-auto">
+            Experience the Pulse Tweaks interface firsthand. Try our interactive demonstration to see how easy it is to optimize your system with just a few clicks.
+          </p>
+        </div>
+        
+        <InteractiveDisplay />
+      </motion.section>
 
       <section className="flex flex-col gap-12 pt-10">
         <div className="text-center">

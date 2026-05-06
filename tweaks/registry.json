@@ -1,5 +1,5 @@
 {
-  "version": "2026-04-12T09:16:33.804Z",
+  "version": "2026-05-06T09:19:33.291Z",
   "tweaks": [
     {
       "id": "24-hour-clock",
@@ -86,7 +86,7 @@
     {
       "id": "debloat-windows",
       "title": "Debloat Windows",
-      "description": "Choose between Void Debloat script or Raphire's Win11Debloat script to remove built-in Windows apps and bloatware.",
+      "description": "Choose between Pulse Tweaks Debloat script or Raphire's Win11Debloat script to remove built-in Windows apps and bloatware.",
       "category": [
         "Performance",
         "Privacy"
@@ -132,6 +132,19 @@
       "reversible": true,
       "docsurl": "https://docs.getsparkle.net/tweaks/disable-advertising-id",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-advertising-id/meta.json"
+    },
+    {
+      "id": "disable-aero-shake",
+      "title": "Disable Aero Shake",
+      "description": "Prevents windows from minimizing when you shake them.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-aero-shake",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-aero-shake/meta.json"
     },
     {
       "id": "disable-animations",
@@ -981,6 +994,19 @@
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-fax/meta.json"
     },
     {
+      "id": "disable-filter-keys",
+      "title": "Disable Filter Keys",
+      "description": "Disables Filter Keys accessibility feature.",
+      "category": [
+        "General",
+        "Accessibility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-filter-keys",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-filter-keys/meta.json"
+    },
+    {
       "id": "disable-firewall",
       "title": "Disable Firewall",
       "description": "Disables Windows Firewall.",
@@ -1158,6 +1184,19 @@
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-lockscreen-tips/meta.json"
     },
     {
+      "id": "disable-logon-background",
+      "title": "Disable Logon Background Image",
+      "description": "Disables the background image on the Windows logon screen for faster login.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-logon-background",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-logon-background/meta.json"
+    },
+    {
       "id": "disable-maps",
       "title": "Disable Maps",
       "description": "Removes Windows Maps app.",
@@ -1234,6 +1273,19 @@
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-mouse-acceleration/meta.json"
     },
     {
+      "id": "disable-mouse-shadow",
+      "title": "Disable Mouse Pointer Shadow",
+      "description": "Disables the shadow effect under the mouse cursor for better performance.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-mouse-shadow",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-mouse-shadow/meta.json"
+    },
+    {
       "id": "disable-mpo",
       "title": "Disable MPO",
       "description": "Disables Multi-Plane Overlay to fix flickering and stuttering on some GPUs.",
@@ -1245,6 +1297,19 @@
       "reversible": true,
       "docsurl": "https://docs.getsparkle.net/tweaks/disable-mpo",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-mpo/meta.json"
+    },
+    {
+      "id": "disable-network-discovery",
+      "title": "Disable Network Discovery",
+      "description": "Disables network discovery to hide your PC on the network.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-network-discovery",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-network-discovery/meta.json"
     },
     {
       "id": "disable-news",
@@ -1310,6 +1375,19 @@
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-print-spooler/meta.json"
     },
     {
+      "id": "disable-quick-access",
+      "title": "Disable Quick Access",
+      "description": "Disables Quick Access in File Explorer, opens to This PC instead.",
+      "category": [
+        "General",
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-quick-access",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-quick-access/meta.json"
+    },
+    {
       "id": "disable-windows-recall",
       "title": "Disable Windows Recall",
       "description": "Disables the Windows Recall feature for better privacy.",
@@ -1321,6 +1399,32 @@
       "addedversion": "2.14.2",
       "docsurl": "https://docs.getsparkle.net/tweaks/disable-recall",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-recall/meta.json"
+    },
+    {
+      "id": "disable-recent-files",
+      "title": "Disable Recent Files",
+      "description": "Disables recent files and folders in File Explorer.",
+      "category": [
+        "Privacy",
+        "General"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-recent-files",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-recent-files/meta.json"
+    },
+    {
+      "id": "disable-remote-assistance",
+      "title": "Disable Remote Assistance",
+      "description": "Disables Windows Remote Assistance feature for security.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-remote-assistance",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-remote-assistance/meta.json"
     },
     {
       "id": "disable-remote-desktop",
@@ -1358,6 +1462,32 @@
       "reversible": true,
       "docsurl": "https://docs.getsparkle.net/tweaks/disable-search-indexing",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-search-indexing/meta.json"
+    },
+    {
+      "id": "disable-shortcut-arrow",
+      "title": "Remove Shortcut Arrows",
+      "description": "Removes the arrow overlay from shortcut icons on the desktop.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-shortcut-arrow",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-shortcut-arrow/meta.json"
+    },
+    {
+      "id": "disable-shutdown-tracker",
+      "title": "Disable Shutdown Event Tracker",
+      "description": "Disables the shutdown event tracker dialog on Windows shutdown.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-shutdown-tracker",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-shutdown-tracker/meta.json"
     },
     {
       "id": "disable-skype",
@@ -1410,6 +1540,32 @@
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-smartscreen/meta.json"
     },
     {
+      "id": "disable-snap-assist",
+      "title": "Disable Snap Assist",
+      "description": "Disables the Snap Assist feature when snapping windows.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-snap-assist",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-snap-assist/meta.json"
+    },
+    {
+      "id": "disable-snap-fill",
+      "title": "Disable Snap Fill",
+      "description": "Disables automatic window resizing when dragging to screen edges.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-snap-fill",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-snap-fill/meta.json"
+    },
+    {
       "id": "disable-sports",
       "title": "Disable Sports",
       "description": "Removes Sports app.",
@@ -1433,6 +1589,19 @@
       "reversible": true,
       "docsurl": "https://docs.getsparkle.net/tweaks/disable-startup-apps",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-startup-apps/meta.json"
+    },
+    {
+      "id": "disable-sticky-keys",
+      "title": "Disable Sticky Keys Popup",
+      "description": "Disables the Sticky Keys popup when pressing Shift 5 times.",
+      "category": [
+        "General",
+        "Accessibility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-sticky-keys",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-sticky-keys/meta.json"
     },
     {
       "id": "disable-superfetch",
@@ -1520,6 +1689,19 @@
       "reversible": true,
       "docsurl": "https://docs.getsparkle.net/tweaks/disable-tips-tricks",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-tips-tricks/meta.json"
+    },
+    {
+      "id": "disable-toggle-keys",
+      "title": "Disable Toggle Keys",
+      "description": "Disables Toggle Keys beep when pressing Caps Lock.",
+      "category": [
+        "General",
+        "Accessibility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/disable-toggle-keys",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-toggle-keys/meta.json"
     },
     {
       "id": "disable-transparency",
@@ -1801,6 +1983,18 @@
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/dns-quad9/meta.json"
     },
     {
+      "id": "enable-admin-approval",
+      "title": "Enable Admin Approval Mode",
+      "description": "Ensures Admin Approval Mode is enabled for UAC prompts.",
+      "category": [
+        "Security"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-admin-approval",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-admin-approval/meta.json"
+    },
+    {
       "id": "enable-balanced",
       "title": "Enable Balanced Power",
       "description": "Sets power plan to Balanced mode.",
@@ -1811,6 +2005,32 @@
       "reversible": true,
       "docsurl": "https://docs.getsparkle.net/tweaks/enable-balanced",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-balanced/meta.json"
+    },
+    {
+      "id": "enable-clear-clipboard",
+      "title": "Clear Clipboard on Exit",
+      "description": "Automatically clears clipboard when exiting Windows.",
+      "category": [
+        "Privacy",
+        "Security"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-clear-clipboard",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-clear-clipboard/meta.json"
+    },
+    {
+      "id": "enable-compressed-files-color",
+      "title": "Colorize Compressed Files",
+      "description": "Shows compressed files and folders in blue color in File Explorer.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-compressed-files-color",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-compressed-files-color/meta.json"
     },
     {
       "id": "enable-dark-mode",
@@ -1838,6 +2058,19 @@
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-end-task-right-click/meta.json"
     },
     {
+      "id": "enable-file-extensions",
+      "title": "Show File Extensions",
+      "description": "Always show file extensions in File Explorer.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-file-extensions",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-file-extensions/meta.json"
+    },
+    {
       "id": "enable-game-mode",
       "title": "Enable Game Mode",
       "description": "Enables Windows Game Mode for better gaming performance.",
@@ -1849,6 +2082,19 @@
       "reversible": true,
       "docsurl": "https://docs.getsparkle.net/tweaks/enable-game-mode",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-game-mode/meta.json"
+    },
+    {
+      "id": "enable-god-mode",
+      "title": "Enable God Mode",
+      "description": "Creates a God Mode folder with all Windows settings.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-god-mode",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-god-mode/meta.json"
     },
     {
       "id": "enable-hags",
@@ -1914,6 +2160,19 @@
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-network-qos/meta.json"
     },
     {
+      "id": "enable-numlock-startup",
+      "title": "Enable NumLock on Startup",
+      "description": "Ensures NumLock is turned on when Windows starts.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-numlock-startup",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-numlock-startup/meta.json"
+    },
+    {
       "id": "enable-optimization-for-windowed-games",
       "title": "Enable Optimization For Windowed Games",
       "description": "Enables Optimization For Windowed Games on windows",
@@ -1950,6 +2209,19 @@
       "reversible": true,
       "docsurl": "https://docs.getsparkle.net/tweaks/enable-taskbar-auto-hide",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-taskbar-auto-hide/meta.json"
+    },
+    {
+      "id": "enable-verbose-status",
+      "title": "Enable Verbose Startup/Shutdown",
+      "description": "Shows detailed information during Windows startup and shutdown.",
+      "category": [
+        "General",
+        "Utility"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getsparkle.net/tweaks/enable-verbose-status",
+      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-verbose-status/meta.json"
     },
     {
       "id": "enable-visual-refresh",
@@ -2294,299 +2566,6 @@
       "addedversion": "2.14.1",
       "docsurl": "https://docs.getsparkle.net/tweaks/wpbt",
       "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/wpbt/meta.json"
-    },
-    {
-      "id": "disable-aero-shake",
-      "title": "Disable Aero Shake",
-      "description": "Prevents windows from minimizing when you shake them.",
-      "category": [
-        "General",
-        "Performance"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-aero-shake",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-aero-shake/meta.json"
-    },
-    {
-      "id": "enable-god-mode",
-      "title": "Enable God Mode",
-      "description": "Creates a God Mode folder with all Windows settings.",
-      "category": [
-        "General",
-        "Utility"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/enable-god-mode",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-god-mode/meta.json"
-    },
-    {
-      "id": "disable-sticky-keys",
-      "title": "Disable Sticky Keys Popup",
-      "description": "Disables the Sticky Keys popup when pressing Shift 5 times.",
-      "category": [
-        "General",
-        "Accessibility"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-sticky-keys",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-sticky-keys/meta.json"
-    },
-    {
-      "id": "disable-filter-keys",
-      "title": "Disable Filter Keys",
-      "description": "Disables Filter Keys accessibility feature.",
-      "category": [
-        "General",
-        "Accessibility"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-filter-keys",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-filter-keys/meta.json"
-    },
-    {
-      "id": "disable-toggle-keys",
-      "title": "Disable Toggle Keys",
-      "description": "Disables Toggle Keys beep when pressing Caps Lock.",
-      "category": [
-        "General",
-        "Accessibility"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-toggle-keys",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-toggle-keys/meta.json"
-    },
-    {
-      "id": "enable-numlock-startup",
-      "title": "Enable NumLock on Startup",
-      "description": "Ensures NumLock is turned on when Windows starts.",
-      "category": [
-        "General",
-        "Utility"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/enable-numlock-startup",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-numlock-startup/meta.json"
-    },
-    {
-      "id": "disable-recent-files",
-      "title": "Disable Recent Files",
-      "description": "Disables recent files and folders in File Explorer.",
-      "category": [
-        "Privacy",
-        "General"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-recent-files",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-recent-files/meta.json"
-    },
-    {
-      "id": "disable-quick-access",
-      "title": "Disable Quick Access",
-      "description": "Disables Quick Access in File Explorer, opens to This PC instead.",
-      "category": [
-        "General",
-        "Privacy"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-quick-access",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-quick-access/meta.json"
-    },
-    {
-      "id": "enable-file-extensions",
-      "title": "Show File Extensions",
-      "description": "Always show file extensions in File Explorer.",
-      "category": [
-        "General",
-        "Utility"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/enable-file-extensions",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-file-extensions/meta.json"
-    },
-    {
-      "id": "disable-snap-assist",
-      "title": "Disable Snap Assist",
-      "description": "Disables the Snap Assist feature when snapping windows.",
-      "category": [
-        "General",
-        "Performance"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-snap-assist",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-snap-assist/meta.json"
-    },
-    {
-      "id": "disable-snap-fill",
-      "title": "Disable Snap Fill",
-      "description": "Disables automatic window resizing when dragging to screen edges.",
-      "category": [
-        "General",
-        "Performance"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-snap-fill",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-snap-fill/meta.json"
-    },
-    {
-      "id": "enable-clear-clipboard",
-      "title": "Clear Clipboard on Exit",
-      "description": "Automatically clears clipboard when exiting Windows.",
-      "category": [
-        "Privacy",
-        "Security"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/enable-clear-clipboard",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-clear-clipboard/meta.json"
-    },
-    {
-      "id": "enable-verbose-status",
-      "title": "Enable Verbose Startup/Shutdown",
-      "description": "Shows detailed information during Windows startup and shutdown.",
-      "category": [
-        "General",
-        "Utility"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/enable-verbose-status",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-verbose-status/meta.json"
-    },
-    {
-      "id": "disable-logon-background",
-      "title": "Disable Logon Background Image",
-      "description": "Disables the background image on the Windows logon screen for faster login.",
-      "category": [
-        "General",
-        "Performance"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-logon-background",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-logon-background/meta.json"
-    },
-    {
-      "id": "disable-shutdown-tracker",
-      "title": "Disable Shutdown Event Tracker",
-      "description": "Disables the shutdown event tracker dialog on Windows shutdown.",
-      "category": [
-        "General",
-        "Utility"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-shutdown-tracker",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-shutdown-tracker/meta.json"
-    },
-    {
-      "id": "disable-remote-assistance",
-      "title": "Disable Remote Assistance",
-      "description": "Disables Windows Remote Assistance feature for security.",
-      "category": [
-        "Privacy",
-        "Security"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-remote-assistance",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-remote-assistance/meta.json"
-    },
-    {
-      "id": "disable-network-discovery",
-      "title": "Disable Network Discovery",
-      "description": "Disables network discovery to hide your PC on the network.",
-      "category": [
-        "Privacy",
-        "Security"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-network-discovery",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-network-discovery/meta.json"
-    },
-    {
-      "id": "enable-admin-approval",
-      "title": "Enable Admin Approval Mode",
-      "description": "Ensures Admin Approval Mode is enabled for UAC prompts.",
-      "category": [
-        "Security"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/enable-admin-approval",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-admin-approval/meta.json"
-    },
-    {
-      "id": "disable-mouse-shadow",
-      "title": "Disable Mouse Pointer Shadow",
-      "description": "Disables the shadow effect under the mouse cursor for better performance.",
-      "category": [
-        "General",
-        "Performance"
-      ],
-      "recommended": true,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-mouse-shadow",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-mouse-shadow/meta.json"
-    },
-    {
-      "id": "enable-compressed-files-color",
-      "title": "Colorize Compressed Files",
-      "description": "Shows compressed files and folders in blue color in File Explorer.",
-      "category": [
-        "General",
-        "Utility"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/enable-compressed-files-color",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/enable-compressed-files-color/meta.json"
-    },
-    {
-      "id": "disable-shortcut-arrow",
-      "title": "Remove Shortcut Arrows",
-      "description": "Removes the arrow overlay from shortcut icons on the desktop.",
-      "category": [
-        "General",
-        "Appearance"
-      ],
-      "recommended": false,
-      "reversible": true,
-      "addedversion": "2.15.0",
-      "docsurl": "https://docs.getsparkle.net/tweaks/disable-shortcut-arrow",
-      "source": "https://github.com/Parcoil/Sparkle/blob/v2/tweaks/disable-shortcut-arrow/meta.json"
     }
   ]
 }

@@ -29,7 +29,7 @@ export function OpeningScreen({ onComplete }: OpeningScreenProps) {
     setIsVisible(false);
     setTimeout(() => {
       onComplete();
-    }, 300);
+    }, 500);
   };
 
   if (!isVisible) return null;
