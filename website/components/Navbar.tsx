@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { Menu, X, Disc as Discord } from "lucide-react";
+import { Menu, X, Disc as Discord, ShoppingCart } from "lucide-react";
+import { useCart } from "@/context/CartContext";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -19,6 +20,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const { totalItems } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,6 +62,17 @@ export const Navbar = () => {
             </Link>
           ))}
           <Link
+            href="/cart"
+            className="flex items-center gap-2 text-void-text-secondary hover:text-void-primary transition-colors relative"
+          >
+            <ShoppingCart size={20} />
+            {totalItems > 0 && (
+              <span className="absolute -top-2 -right-2 bg-void-primary text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                {totalItems}
+              </span>
+            )}
+          </Link>
+          <Link
             href="https://discord.gg/6yDpsvznMj"
             target="_blank"
             className="flex items-center gap-2 bg-void-primary/10 text-void-primary px-4 py-2 rounded-lg border border-void-primary/20 hover:bg-void-primary hover:text-white transition-all"
@@ -91,6 +104,14 @@ export const Navbar = () => {
               {item.name}
             </Link>
           ))}
+          <Link
+            href="/cart"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-2 text-lg font-medium text-void-text-secondary"
+          >
+            <ShoppingCart size={20} />
+            Cart {totalItems > 0 && `(${totalItems})`}
+          </Link>
         </div>
       )}
     </nav>

@@ -5,11 +5,32 @@ import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { InteractiveDisplay } from "@/components/InteractiveDisplay";
 import { LivePreview } from "@/components/LivePreview";
-import { Zap, Shield, Rocket, Terminal, Laptop, Cpu, Gauge, ArrowLeft } from "lucide-react";
+import { useCart } from "@/context/CartContext";
+import { Zap, Shield, Rocket, Terminal, Laptop, Cpu, Gauge, ArrowLeft, ShoppingCart, Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function PulseTweaksUtilityPage() {
+  const { addItem } = useCart();
+  const [addedToCart, setAddedToCart] = useState(false);
+  const isPurchasingEnabled = false; // Disabled for now
+
+  const productPrice = "TBD"; // Price TBD
+
+  const handleAddToCart = () => {
+    if (!isPurchasingEnabled) return;
+    
+    addItem({
+      id: "pulse-tweaks-utility",
+      name: "Pulse Tweaks Utility",
+      description: "Our flagship desktop application for PC optimization",
+      price: 29.99, // Actual price when enabled
+    });
+    setAddedToCart(true);
+    setTimeout(() => setAddedToCart(false), 2000);
+  };
+
   const features = [
     { 
       icon: Shield, 
@@ -75,9 +96,38 @@ export default function PulseTweaksUtilityPage() {
                 Join Our Discord <Rocket size={20} className="ml-2" />
               </Button>
             </Link>
-            <Button variant="secondary" size="lg" className="px-10 h-16 text-xl">
-              v1.0.0 Stable
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="px-10 h-16 text-xl"
+              onClick={handleAddToCart}
+              disabled={addedToCart || !isPurchasingEnabled}
+            >
+              {addedToCart ? (
+                <>
+                  <Check size={20} className="mr-2" />
+                  Added to Cart
+                </>
+              ) : (
+                <>
+                  <ShoppingCart size={20} className="mr-2" />
+                  {isPurchasingEnabled ? `Add to Cart - $${productPrice}` : "Coming Soon"}
+                </>
+              )}
             </Button>
+          </div>
+          
+          <div className="mt-4 p-4 glass-card rounded-xl border border-void-border/30">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-void-text-secondary text-sm">Price</p>
+                <p className="text-3xl font-bold text-void-primary">{productPrice}</p>
+              </div>
+              <div className="text-right">
+                <p className="text-void-text-secondary text-sm">License</p>
+                <p className="text-white font-semibold">Lifetime Access</p>
+              </div>
+            </div>
           </div>
         </motion.div>
 

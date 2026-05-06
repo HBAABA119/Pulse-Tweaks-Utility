@@ -90,7 +90,8 @@
     "appId": "com.hbaaba119.pulse-tweaks",
     "productName": "Pulse Tweaks",
     "directories": {
-      "buildResources": "build"
+      "buildResources": "build",
+      "output": "dist-final"
     },
     "icon": "icon.ico",
     "files": [
