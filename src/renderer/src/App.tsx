@@ -14,6 +14,7 @@ import Settings from "./pages/Settings"
 import Backup from "./pages/Backup"
 import FirstTime from "./components/firsttime"
 import UpdateManager from "./components/updatemanager"
+import { OpeningScreen } from "./components/OpeningScreen"
 import { useDiscordRPC } from "./hooks/useDiscordRPC"
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(
     localStorage.getItem("sidebarCollapsed") === "true",
   )
+  const [showOpeningScreen, setShowOpeningScreen] = useState(() => {
+    // Only show on first launch per session (not stored)
+    return !sessionStorage.getItem("openingScreenShown")
+  })
   useEffect(() => {
     const applyTheme = (theme) => {
       document.body.classList.remove("light", "purple", "dark", "gray", "classic")
@@ -64,8 +69,14 @@ function App() {
     localStorage.setItem("sidebarCollapsed", newCollapsed.toString())
   }
 
+  const handleOpeningScreenComplete = () => {
+    sessionStorage.setItem("openingScreenShown", "true")
+    setShowOpeningScreen(false)
+  }
+
   return (
     <div className="flex flex-col h-screen text-void-text overflow-hidden font-sans" style={{ background: 'transparent' }}>
+      {showOpeningScreen && <OpeningScreen onComplete={handleOpeningScreenComplete} />}
       <FirstTime />
       <TitleBar onToggleSidebar={toggleSidebar} sidebarCollapsed={sidebarCollapsed} />
       

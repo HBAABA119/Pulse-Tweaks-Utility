@@ -1,0 +1,1 @@
+{"name": "enable-verbose-status", "title": "Enable Verbose Startup/Shutdown", "description": "Shows detailed information during Windows startup and shutdown.", "category": ["General", "Utility"], "recommended": false}

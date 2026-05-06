@@ -1,0 +1,1 @@
+{"name": "disable-shutdown-tracker", "title": "Disable Shutdown Event Tracker", "description": "Disables the shutdown event tracker dialog on Windows shutdown.", "category": ["General", "Utility"], "recommended": true}

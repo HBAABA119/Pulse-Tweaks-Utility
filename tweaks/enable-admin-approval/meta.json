@@ -1,0 +1,1 @@
+{"name": "enable-admin-approval", "title": "Enable Admin Approval Mode", "description": "Ensures Admin Approval Mode is enabled for UAC prompts.", "category": ["Security"], "recommended": true}

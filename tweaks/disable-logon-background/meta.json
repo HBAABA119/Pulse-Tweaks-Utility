@@ -1,0 +1,1 @@
+{"name": "disable-logon-background", "title": "Disable Logon Background Image", "description": "Disables the background image on the Windows logon screen for faster login.", "category": ["General", "Performance"], "recommended": false}
