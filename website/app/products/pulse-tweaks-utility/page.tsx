@@ -13,22 +13,58 @@ import { useState } from "react";
 
 export default function PulseTweaksUtilityPage() {
   const { addItem } = useCart();
-  const [addedToCart, setAddedToCart] = useState(false);
-  const isPurchasingEnabled = false; // Disabled for now
+  const [addedToCart, setAddedToCart] = useState("");
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly");
+  const isPurchasingEnabled = true; // Enabled for Pro plans
 
-  const productPrice = "TBD"; // Price TBD
+  const pricingPlans = {
+    free: {
+      name: "Free",
+      price: 0,
+      features: [
+        "Basic system optimization",
+        "Limited registry tweaks",
+        "Community support",
+        "Manual updates",
+      ],
+    },
+    pro: {
+      name: "Pro",
+      monthlyPrice: 20,
+      yearlyPrice: 180, // $15/month when billed yearly
+      features: [
+        "Advanced system optimization",
+        "Unlimited registry tweaks",
+        "Priority support",
+        "Automatic updates",
+        "Gaming mode optimization",
+        "Privacy hardening tools",
+        "Performance monitoring",
+        "Custom tweak profiles",
+      ],
+    },
+  };
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (plan: string, price: number, billing?: string) => {
     if (!isPurchasingEnabled) return;
     
+    const productId = `pulse-tweaks-${plan.toLowerCase()}${billing ? `-${billing}` : ""}`;
+    const productName = `Pulse Tweaks Utility ${plan}${billing ? ` (${billing})` : ""}`;
+    
     addItem({
-      id: "pulse-tweaks-utility",
-      name: "Pulse Tweaks Utility",
-      description: "Our flagship desktop application for PC optimization",
-      price: 29.99, // Actual price when enabled
+      id: productId,
+      name: productName,
+      description: `${plan} plan${billing ? ` billed ${billing}` : ""}`,
+      price: price,
     });
-    setAddedToCart(true);
-    setTimeout(() => setAddedToCart(false), 2000);
+    
+    setAddedToCart(productId);
+    setTimeout(() => setAddedToCart(""), 2000);
+  };
+
+  const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>, plan: string, price: number, billing?: string) => {
+    e.preventDefault();
+    handleAddToCart(plan, price, billing);
   };
 
   const features = [
@@ -96,14 +132,14 @@ export default function PulseTweaksUtilityPage() {
                 Join Our Discord <Rocket size={20} className="ml-2" />
               </Button>
             </Link>
-            <Button 
-              variant="secondary" 
-              size="lg" 
+            <Button
+              variant="secondary"
+              size="lg"
               className="px-10 h-16 text-xl"
-              onClick={handleAddToCart}
-              disabled={addedToCart || !isPurchasingEnabled}
+              onClick={(e) => handleButtonClick(e, "Free", 0)}
+              disabled={addedToCart.includes("pulse-tweaks-free")}
             >
-              {addedToCart ? (
+              {addedToCart.includes("pulse-tweaks-free") ? (
                 <>
                   <Check size={20} className="mr-2" />
                   Added to Cart
@@ -111,7 +147,7 @@ export default function PulseTweaksUtilityPage() {
               ) : (
                 <>
                   <ShoppingCart size={20} className="mr-2" />
-                  {isPurchasingEnabled ? `Add to Cart - $${productPrice}` : "Coming Soon"}
+                  Current Plan
                 </>
               )}
             </Button>
@@ -120,12 +156,12 @@ export default function PulseTweaksUtilityPage() {
           <div className="mt-4 p-4 glass-card rounded-xl border border-void-border/30">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-void-text-secondary text-sm">Price</p>
-                <p className="text-3xl font-bold text-void-primary">{productPrice}</p>
+                <p className="text-void-text-secondary text-sm">Current Plan</p>
+                <p className="text-3xl font-bold text-void-primary">Free</p>
               </div>
               <div className="text-right">
                 <p className="text-void-text-secondary text-sm">License</p>
-                <p className="text-white font-semibold">Lifetime Access</p>
+                <p className="text-white font-semibold">Basic Features</p>
               </div>
             </div>
           </div>
@@ -139,6 +175,153 @@ export default function PulseTweaksUtilityPage() {
           <LivePreview />
         </motion.div>
       </section>
+
+      {/* Pricing Section */}
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="flex flex-col gap-8"
+      >
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-white mb-4">Choose Your Plan</h2>
+          <p className="text-void-text-secondary text-xl">
+            Start optimizing your PC with the right plan for your needs
+          </p>
+        </div>
+
+        {/* Billing Toggle for Pro Plan */}
+        <div className="flex justify-center mb-8">
+          <div className="glass-card rounded-xl p-1 border border-void-border/30 inline-flex">
+            <button
+              onClick={() => setBillingCycle("monthly")}
+              className={`px-6 py-2 rounded-lg font-semibold transition-all ${
+                billingCycle === "monthly"
+                  ? "bg-void-primary text-white"
+                  : "text-void-text-secondary hover:text-white"
+              }`}
+            >
+              Monthly
+            </button>
+            <button
+              onClick={() => setBillingCycle("yearly")}
+              className={`px-6 py-2 rounded-lg font-semibold transition-all ${
+                billingCycle === "yearly"
+                  ? "bg-void-primary text-white"
+                  : "text-void-text-secondary hover:text-white"
+              }`}
+            >
+              Yearly
+              <span className="ml-2 px-2 py-0.5 bg-green-500 text-white text-xs rounded-full">
+                Save 25%
+              </span>
+            </button>
+          </div>
+        </div>
+
+        {/* Pricing Cards */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Free Plan */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="glass-card rounded-2xl p-8 border border-void-border/30 hover:border-void-border/50 transition-all"
+          >
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold text-white mb-2">
+                {pricingPlans.free.name}
+              </h3>
+              <div className="flex items-baseline gap-2">
+                <span className="text-4xl font-bold text-void-primary">
+                  ${pricingPlans.free.price}
+                </span>
+                <span className="text-void-text-secondary">/month</span>
+              </div>
+            </div>
+
+            <div className="space-y-3 mb-8">
+              {pricingPlans.free.features.map((feature, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <Check size={20} className="text-void-primary flex-shrink-0" />
+                  <span className="text-void-text-secondary">{feature}</span>
+                </div>
+              ))}
+            </div>
+
+            <Button
+              variant="secondary"
+              size="lg"
+              className="w-full"
+              disabled
+            >
+              Current Plan
+            </Button>
+          </motion.div>
+
+          {/* Pro Plan */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="glass-card rounded-2xl p-8 border-2 border-void-primary/50 relative hover:border-void-primary transition-all"
+          >
+            <div className="absolute -top-3 right-8 px-3 py-1 bg-void-primary text-white text-xs font-bold rounded-full">
+              RECOMMENDED
+            </div>
+
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold text-white mb-2">
+                {pricingPlans.pro.name}
+              </h3>
+              <div className="flex items-baseline gap-2">
+                <span className="text-4xl font-bold text-void-primary">
+                  ${billingCycle === "monthly" ? pricingPlans.pro.monthlyPrice : Math.floor(pricingPlans.pro.yearlyPrice / 12)}
+                </span>
+                <span className="text-void-text-secondary">/month</span>
+                {billingCycle === "yearly" && (
+                  <span className="text-void-text-muted text-sm">
+                    (${pricingPlans.pro.yearlyPrice}/year)
+                  </span>
+                )}
+              </div>
+            </div>
+
+            <div className="space-y-3 mb-8">
+              {pricingPlans.pro.features.map((feature, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <Check size={20} className="text-void-primary flex-shrink-0" />
+                  <span className="text-void-text-secondary">{feature}</span>
+                </div>
+              ))}
+            </div>
+
+            <Button
+              size="lg"
+              className="w-full"
+              onClick={(e) => handleButtonClick(
+                e,
+                "Pro",
+                billingCycle === "monthly" ? pricingPlans.pro.monthlyPrice : pricingPlans.pro.yearlyPrice,
+                billingCycle
+              )}
+              disabled={addedToCart.includes(`pulse-tweaks-pro-${billingCycle}`)}
+            >
+              {addedToCart.includes(`pulse-tweaks-pro-${billingCycle}`) ? (
+                <>
+                  <Check size={20} className="mr-2" />
+                  Added to Cart
+                </>
+              ) : (
+                <>
+                  <ShoppingCart size={20} className="mr-2" />
+                  Add to Cart
+                </>
+              )}
+            </Button>
+          </motion.div>
+        </div>
+      </motion.section>
 
       {/* Interactive Display Section */}
       <motion.section
