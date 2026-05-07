@@ -74,23 +74,15 @@ export interface PayPalPaymentSource {
     expiry: string;
     security_code: string;
     billing_address?: PayPalAddress;
+    experience_context?: PayPalExperienceContext;
   };
   paypal?: {
-    experience_context?: {
-      brand_name?: string;
-      locale?: string;
-      landing_page?: "LOGIN" | "BILLING" | "NO_PREFERENCE";
-      user_action?: "PAY_NOW" | "CONTINUE";
-      payment_method_preference?: "IMMEDIATE_PAYMENT_REQUIRED" | "UNRESTRICTED";
-    };
+    experience_context?: PayPalExperienceContext;
   };
   venmo?: {
     experience_context?: PayPalExperienceContext;
   };
   applepay?: {
-    experience_context?: PayPalExperienceContext;
-  };
-  card?: {
     experience_context?: PayPalExperienceContext;
   };
 }
