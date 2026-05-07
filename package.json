@@ -2,7 +2,6 @@
   "name": "pulse-tweaks",
   "version": "1.0.0",
   "description": "Pulse Tweaks Utility",
-  "type": "module",
   "main": "./out/main/index.js",
   "author": "Pulse Team",
   "homepage": "https://pulsetweaks.net",
@@ -99,6 +98,7 @@
       "resources",
       "tweaks",
       "icon.ico",
+      "build/launch-as-admin.bat",
       "package.json"
     ],
     "win": {
@@ -125,12 +125,13 @@
       "createStartMenuShortcut": true,
       "shortcutName": "Pulse Tweaks",
       "deleteAppDataOnUninstall": false,
-      "runAfterFinish": true,
+      "runAfterFinish": false,
       "menuCategory": "System Utilities",
       "packElevateHelper": true,
       "perMachine": true,
       "displayLanguageSelector": false,
-      "artifactName": "${productName}-Setup-${version}.${ext}"
+      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "include": "build/elevate.nsh"
     },
     "npmRebuild": false
   },

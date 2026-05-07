@@ -30,14 +30,18 @@ const store = new Store()
 // Check if running as admin
 let isAdmin = false
 const checkAdmin = () => {
-  exec('net session', (error) => {
-    isAdmin = !error
-    if (!isAdmin) {
-      log.warn("Not running as admin - some features may not work")
-    } else {
-      log.info("Running with admin privileges")
-    }
-  })
+  try {
+    exec('net session', (error) => {
+      isAdmin = !error
+      if (!isAdmin) {
+        log.warn("Not running as admin - some features may not work")
+      } else {
+        log.info("Running with admin privileges")
+      }
+    })
+  } catch (e) {
+    log.error("Error checking admin status:", e)
+  }
 }
 
 let trayInstance: any = null
@@ -102,7 +106,7 @@ function createWindow(): void {
       frame: false,
       show: false,
       autoHideMenuBar: true,
-      icon: path.join(__dirname, "../../resources/Pulse-Tweaks-Logo.ico"),
+      icon: path.join(__dirname, "../resources/Pulse-Tweaks-Logo.ico"),
       webPreferences: {
         preload: join(__dirname, "../preload/index.js"),
         devTools: app.isPackaged ? false : true,

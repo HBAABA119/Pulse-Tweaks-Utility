@@ -1,12 +1,12 @@
 import { app, ipcMain, BrowserWindow } from "electron"
-import { autoUpdater, UpdateInfo } from "electron-updater"
+const { autoUpdater } = require("electron-updater")
 
 export function initAutoUpdater(getMainWindow: () => BrowserWindow | null): void {
   autoUpdater.autoDownload = false
   autoUpdater.disableWebInstaller = false
   autoUpdater.autoInstallOnAppQuit = true
 
-  autoUpdater.on("update-available", (info: UpdateInfo) => {
+  autoUpdater.on("update-available", (info: any) => {
     const win = getMainWindow()
     win?.webContents.send("updater:available", {
       version: info.version,
@@ -34,7 +34,7 @@ export function initAutoUpdater(getMainWindow: () => BrowserWindow | null): void
     })
   })
 
-  autoUpdater.on("update-downloaded", (info: UpdateInfo) => {
+  autoUpdater.on("update-downloaded", (info: any) => {
     const win = getMainWindow()
     win?.webContents.send("updater:downloaded", { version: info.version })
   })
