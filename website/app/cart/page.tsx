@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Link } from "next/link";
+import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { ArrowLeft, Trash2, Plus, Minus, ShoppingCart, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/Button";
