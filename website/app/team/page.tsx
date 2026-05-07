@@ -14,22 +14,15 @@ const team = [
     socials: { discord: "#" }
   },
   {
-    name: "Tiny Gato",
-    role: "Founder",
-    bio: "Co-founder of Pulse Tweaks. Dedicated to building the most powerful optimization tools in the industry.",
-    image: "/logo.png",
-    socials: { discord: "#" }
-  },
-  {
     name: "Alexander",
-    role: "Developer",
+    role: "Owner & Developer",
     bio: "Master of many languages and a fun guy to work with. Bringing deep technical expertise to the Pulse engine.",
     image: "/logo.png",
     socials: { discord: "#", github: "#" }
   },
   {
     name: "Nicholas",
-    role: "Developer",
+    role: "Owner & Developer",
     bio: "Master of Discord bots and always fun to chat with. Ensuring our community and automation stay top-tier.",
     image: "/logo.png",
     socials: { discord: "#" }
